@@ -73,7 +73,6 @@ code {
 }
 code.kw {
     color: #af601b;
-    font-weight: normal;
 }
 code.cr {
     color: #606060;
@@ -109,4 +108,8 @@ code.cr {
     a[href^=http]::after {
         content: ' [' attr(href) ']';
     }
+    a[href^=http]:after { /* for IE8 */
+        content: ' [' attr(href) ']';
+    }
+
 }
