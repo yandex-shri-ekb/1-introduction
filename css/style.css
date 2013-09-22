@@ -1,0 +1,146 @@
+/* BROWSER STYLE RESET (обнуляем параметры) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    background-color: #565656;
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+}
+h1 {
+    font-size: 43px;
+    text-align: right;
+    color: #444;
+    border-bottom: 4px solid #ebebeb;
+    letter-spacing: -1px;
+    font-weight: normal;
+    margin-bottom: 117px;
+    padding-bottom: 10px;
+    page-break-after: avoid;
+}
+h2 {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    color: #444;
+    margin: 65px 0 20px;
+    border-bottom: 2px solid #ebebeb;
+    page-break-after: avoid;
+    padding-bottom: 11px;
+}
+p {
+    line-height: 28px;
+    margin-bottom: 28px;
+}
+pre {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: #34571e;
+    border-bottom: solid 4px #ffd966;
+    font-size: 15px;
+    margin-bottom: 27px;
+    padding-bottom: 12px;
+}
+pre::before {
+    content: '';
+    height: 25px;
+    display: block;
+    margin: 33px 0 18px;
+    background: #fff2c4;
+    background: -moz-linear-gradient(top, #fff2c4 0%, #ffdd67 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff2c4), color-stop(100%,#ffdd67));
+    background: -webkit-linear-gradient(top, #fff2c4 0%,#ffdd67 100%);
+    background: -o-linear-gradient(top, #fff2c4 0%,#ffdd67 100%);
+    background: -ms-linear-gradient(top, #fff2c4 0%,#ffdd67 100%);
+    background: linear-gradient(to bottom, #fff2c4 0%,#ffdd67 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff2c4', endColorstr='#ffdd67',GradientType=0 );
+}
+pre .comment {
+    color: #7a7a7a;
+}
+pre .value {
+    color: #b45e05;
+}
+code {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: #B45F06;
+}
+strong {
+    font-weight: bold;
+}
+em, i {
+    font-style: italic;
+    color: #606060;
+}
+a {
+    color: #021eaa;
+    outline: 0 none;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline;
+}
+.content {
+    margin: 0 auto;
+    background-color: #fff;
+    max-width: 770px;
+    padding: 55px 82px;
+}
+.page-break {
+    page-break-after: auto;
+    display: block;
+    height: 0;
+}
+@media print {
+    body {
+        background-color: #fff;
+        margin: 0;
+    }
+    h1 {
+        margin-bottom: 75px;
+    }
+    h2 {
+        margin: 35px 0 15px;
+        padding-bottom: 7px;
+    }
+    p {
+        line-height: 25px;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+    pre {
+        border-top: solid 25px #ffd966;
+    }
+    pre:before {
+        display: block;
+        height: 0;
+        margin: 0 0 18px;
+    }
+    .content {
+        padding: 0;
+        max-width:none;
+    }
+}
