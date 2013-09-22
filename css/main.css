@@ -1,0 +1,73 @@
+html {
+    background: #cccccc;
+
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+h1 {
+    color: #444444;
+    font-size: 36px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: normal;
+    text-align: right;
+    background: url(../image/h1.png) left bottom transparent repeat-x;
+    padding-bottom: 4mm;
+    margin: 0 0 28mm;
+}
+h2 {
+    font-size: 18px;
+    margin: 16mm 0 5mm;
+    padding-bottom: 3mm;
+    color: #444444;
+    background: url(../image/h2.png) left bottom transparent repeat-x;
+}
+p {
+    margin: 0 0 9mm 0;
+}
+pre {
+    margin: 0;
+}
+code {
+    color: #37571e;
+    font-family: Courier, "Courier New", monospace;
+}
+code .comment {
+    color: #7a7a7a;
+}
+code .string {
+    color: #b45e09;
+}
+.code-block-begin {
+    background: url(../image/code-begin.png) left bottom transparent repeat-x;
+    height: 22px;
+    margin-bottom: 4mm;
+}
+.code-block-end {
+    background: url(../image/code-end.png) left bottom transparent repeat-x;
+    height: 4px;
+    margin: 3mm 0 9mm;
+}
+.pdf {}
+.pdf .page {
+    width: 210mm;
+    height: 297mm;
+    box-shadow: 0 2px 5px 2px gray;
+    background: #FFF;
+    margin: 5px auto 30px;
+    position: relative;
+    padding: 15mm 20mm;
+    box-sizing: border-box;
+}
+.pdf .body {}
+.pdf .header {}
+.pdf .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10mm;
+}
+.pdf .footer .page-num {
+    text-align: center;
+}
