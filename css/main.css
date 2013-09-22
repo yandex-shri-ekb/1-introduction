@@ -12,6 +12,7 @@ h1 {
     font-weight: normal;
     text-align: right;
     background: url(../image/h1.png) left bottom transparent repeat-x;
+    /*border-bottom: 3px solid #EAEBEB;*/
     padding-bottom: 4mm;
     margin: 0 0 28mm;
 }
@@ -21,6 +22,7 @@ h2 {
     padding-bottom: 3mm;
     color: #444444;
     background: url(../image/h2.png) left bottom transparent repeat-x;
+    /*border-bottom: 2px solid #EBECEC;*/
 }
 p {
     margin: 0 0 9mm 0;
@@ -60,7 +62,6 @@ code .string {
     box-sizing: border-box;
 }
 .pdf .body {}
-.pdf .header {}
 .pdf .footer {
     position: absolute;
     bottom: 0;
@@ -70,4 +71,37 @@ code .string {
 }
 .pdf .footer .page-num {
     text-align: center;
+}
+
+@media print {
+    .pdf .page {
+        width: auto;
+        height: auto;
+        box-shadow: none;
+        background: #FFF;
+        margin: 0;
+        position: static;
+        padding: 0;
+        box-sizing: content-box;
+    }
+    .visible-screen {
+        display: none;
+    }
+    h1 {
+        border-bottom: 3px solid #EAEBEB;
+    }
+    h2 {
+        border-bottom: 2px solid #EBECEC;
+    }
+    .code-block-begin {
+        height: 0;
+        border-bottom: 15px solid #FDECAD;
+    }
+    .code-block-end {
+        height: 0;
+        border-bottom: 4px solid #FDD95D;
+    }
+    a:after {
+        content:" (" attr(href) ") ";font-size:0.8em;font-weight:normal;
+    }
 }
