@@ -1,0 +1,83 @@
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Anonymous+Pro:400,700);  /* 'PT Sans Narrow', 'Anonymous Pro'*/
+
+
+body{
+	background: white;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font: 400 17px Arial, sans-serif;
+	line-height: 1.8;
+}
+#contant{
+	width:80.85106382978723%;
+	max-width: 770px;
+	margin: 0 auto;
+}
+.head-book{
+	margin: 60px 0 100px 0;
+}
+.head-book .hr{
+	border-bottom:3px solid #e6e6e6;
+}
+h1, h2{
+	color:#444;
+}
+h1{
+	font: 400 46px 'PT Sans Narrow', arial, sans-serif;
+	text-align: right;
+	margin-bottom: 10px;
+}
+h2{
+	font: 900 1.2em Tahoma, sans-serif;
+	margin-top: 60px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #e6e6e6;
+}
+
+.code-block{
+	border:20px;
+}
+.code-block .hr{
+	background-color: #ffd856;
+	background-image: -moz-linear-gradient(top, #ffeeaf, #ffd856);
+	background-image: -ms-linear-gradient(top, #ffeeaf, #ffd856);
+	background-image: -o-linear-gradient(top, #ffeeaf, #ffd856);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#ffeeaf), to(#ffd856));
+	background-image: -webkit-linear-gradient(top, #ffeeaf, #ffd856);
+	background-image: linear-gradient(top, #ffeeaf, #ffd856);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffeeaf', endColorstr = '#ffd856');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffeeaf', endColorstr = '#ffd856')";
+	height:25px;
+}
+pre{
+	color:#3b6323;
+	font: 700 14px 'Anonymous Pro', 'Times New Roman', serif;
+	line-height: 1.3;
+	border-bottom: 3px solid #ffd966;
+}
+.gr-text, i{
+	color:#7a7a7a;
+}
+.org-text{
+	color:#b45e05;
+}
+
+@media print {
+	a[href^=http]:after {
+		content:" <" attr(href) ">";
+	}
+	* {
+		-webkit-print-color-adjust: exact;
+	}
+	#contant{
+		width:842px;
+	}
+	.code-block .hr{
+		background:none;
+		border-top:25px solid #ffe078;
+		height:0;
+	}
+
+}
