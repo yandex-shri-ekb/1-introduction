@@ -9,8 +9,7 @@ body {
 
 .page {
     background-color: #fff;
-    max-height: 3508px;
-    max-width: 2480px;
+    max-width: 800px;
     min-width: 320px; /*+ padding */
     padding: 2% 5% 5% 5%;
     margin: 1.1em auto 1.1em auto;
