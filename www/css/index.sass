@@ -1,0 +1,111 @@
+@import "compass/css3"
+
+// делаем ужасные: вещи грузим 1.6 Мб шрифтов :(
+// надо бы еще указать использование локального шрифта
+@font-face
+  font-family: 'ArialNarrow'
+  src: url('fonts/ArialNarrow.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Courier New'
+  src: url('fonts/CourierNew.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: "Courier New"
+  src: url('fonts/CourierNewBold.ttf') format('truetype')
+  font-weight: bold
+  font-style: normal
+
+body
+  font-family: sans-serif
+  background: #CCC
+  padding-bottom: 20px
+  font-size: 15px
+  color: #444
+
+p
+  color: #000
+  line-height: 24px
+  margin-bottom: 34px
+
+a
+  color: #0239D0
+  &:visited
+    color: #0239D0
+
+h2
+  font-family: 'ArialNarrow', sans-serif
+  font-size: 38px
+  margin: -7px 0 106px
+  padding-bottom: 8px
+  border-bottom: 3px solid #EBEBEB
+  text-align: right
+  color: #444
+
+h3
+  font-size: 18px
+  font-weight: bold
+  border-bottom: 2px solid #EBEBEB
+  padding-bottom: 8px
+  margin: 59px 0 20px
+
+#page
+  width: 816px
+  margin: 0 auto
+  padding-top: 3px
+
+.sheet
+  position: relative
+  height: 1056px
+  margin: 0 auto 14px
+  box-shadow: 0 0 5px 2px #979797
+  background: white
+  text-align: left
+
+  .sheet-number
+    font-size: 13px
+    font-family: sans-serif
+    position: absolute
+    left: 50%
+    width: 30px
+    text-align: center
+    margin-left: -15px
+    bottom: 18px
+    color: black
+
+.sheet-offset
+  padding: 56px 72px 60px 72px
+
+code
+  font-family: 'Courier New', sans-serif
+  color: #37571E
+  font-size: 13px
+  font-weight: bold
+  margin-bottom: 4px
+
+  .comment
+    color: #7A7A7A
+
+  .string
+    color: #C45E05
+    font-weight: bold
+
+.code-start // или использовать linear-gradient
+  display: block
+  height: 22px
+  background: url("images/code-start.png") left bottom repeat-x
+
+.code-block
+  code
+    display: block
+    font-size: 12px
+
+.code-end
+  display: block
+  margin: -26px 0 20px
+  height: 4px
+  background: url("images/code-end.png") left bottom repeat-x
