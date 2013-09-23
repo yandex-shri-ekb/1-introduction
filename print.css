@@ -1,0 +1,80 @@
+﻿
+/*CSS стиль для печатной версии страницы*/
+
+
+
+/*К сожалению, я не смог вывести номер страницы в печатной версии. Был испробован метод с 
+@page {
+  @bottom-right {
+    content: counter(page) "/" counter(pages);
+  }
+ Но он не работал ни в одном моем браузере. А объявлять спец. элементы (например, <span>) в html разметке, в последующем, устанавливая их содержимое на номер текущей страницы, показалось
+ мне сомнительной идеей, т.к. при малейшем изменении разметки или текста придется полностью перерабатывать данные элементы.
+}*/
+
+div.header {
+	display:none;
+}
+
+div.mainDiv {
+	margin:0px;
+	width:100%;
+}
+
+/* для ссылок в печатной версии указываем полные адреса. Т.к. на бумаге нельзя 'кликнуть'.*/
+a:after {content:" (" attr(href) ")"; }
+
+
+
+
+header {
+	color:black;
+}
+
+
+.chapter {
+	text-align:right;
+	font-size:30pt;
+}
+
+.section {
+	text-align:left;
+	font-size:15pt;
+	font-weight:bold;
+}
+
+p {
+	margin-top:45px;
+	margin-bottom:45px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+
+.codeBlock {
+	border-top:30px black solid;
+	border-bottom:2px black solid;
+	font-weight:bold;
+}
+
+article {
+	margin-top:100px;
+}
+
+.codeComment {
+	color:black;
+}
+
+.codeLiteral {
+	color:black;
+}
+
+.code {
+	color:black;
+}
+
+.codeInText {
+	color:black;
+	font-style:italic;
+	font-family:"Courier New", Courier, monospace;
+}
+
