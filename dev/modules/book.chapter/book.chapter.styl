@@ -1,0 +1,51 @@
+/*! [BOOK CHAPTER] */
+
+/* Variables */
+chapterHeaderColor=#343434
+chapterHeaderBorderColor=#e5e5e5
+chapterEmColor=#5d5d5d
+
+/* Functions */
+chapter-h(n)
+  color chapterHeaderColor
+  border-bottom chapterHeaderBorderColor solid n
+
+/* Styles */
+.chapter
+  margin 0 auto
+  padding 50px 70px 0
+  width 670px
+  background #fff
+
+  &-group
+    padding-bottom 30px
+
+  &-h1
+    margin-bottom 100px
+    padding-bottom 8px
+    text-align right
+    font normal 37px/43px 'Arial Narrow', Arial, sans-serif
+    chapter-h(2px)
+
+  &-h2
+    margin-bottom 20px
+    padding-bottom 6px
+    font bold 17px/27px Tahoma, Geneva, sans-serif
+    chapter-h(1px)
+
+  &-p
+    margin-bottom 30px
+    font normal 15px/25px Helvetica, Arial, sans-serif
+
+  &-em
+    color chapterEmColor
+
+/*! Remove width resctriction on small screens */
+@media screen and (max-width: 810px)
+  .chapter
+    width auto
+
+/*! Remove padding on chapter element because print page already has it */
+@media print
+  .chapter
+    padding 0
