@@ -1,0 +1,109 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+h1, h2 {
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 2px solid #ebebeb;
+	color: #444;
+}
+h1 {
+	text-align: right;
+	padding-bottom: 10px;
+	margin: 42px 0px 110px 0px;
+	font-family: 'Arial Narrow', Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 33pt;
+	border-bottom-width: 4px
+}
+h2 {
+	text-align: left;
+	padding-bottom: 8px;
+	border-bottom-width: 1px;
+	margin: 58px 0px 20px 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 13pt;
+	line-height: 26px;
+	margin: 23px 0px 0px 0px;
+	word-spacing: 1px;
+}
+.page {
+	/*background-color: #ccc;*/
+	/*width: 771px;*/
+	padding-left: 81px;
+	padding-right: 81px;
+	position: relative;
+}
+pre {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 600;
+	font-size: 10pt;
+}
+.code-predecessor {
+	height: 25px;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAZCAIAAAB/8tMoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABoSURBVBhXDcOrDoJgAIDR72kNBgvFYGAzECwGApuBwGYwGAwEN4Obr+ENdHhF5QU+/7Md7Hb42+J3g591WGK7wvcSXwt8zvFR4D0PZ3jLsEnxOsXLBOskHGMV43mEpyEeIzwMwj7ue3+TPj41S7HUpAAAAABJRU5ErkJggg==') repeat-x;
+	margin: 30px 0px 10px 0px;
+}
+.code-successor {
+	height: 3px;
+	background-color: #ffd966;
+}
+.code-support {
+	color: #34581e;
+}
+.code-comment {
+	color: #7a7a7a;
+}
+.code-highlight {
+	color: #b45f06;
+}
+.code-reference {
+	font-style: oblique;
+	color: #606060;
+}
+.code-inline {
+	color: #b45f06;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 11pt;
+	font-weight: bold;
+}
+a {
+	color: #021eaa;
+}
+.page-number {
+	display: none;
+	text-align: center;
+	font-size: 13;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 17px 0px 0px 0px;
+}
+
+@media print {
+	.code-predecessor, .code-successor {
+		-webkit-print-color-adjust: exact;
+	}
+	.page {
+		width: 771px;
+	}
+	h1 {
+		margin: 80px 0px 200px 0px;
+	}
+	.page-number {
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		width: 771px;
+	}
+	.page-break {
+		page-break-after: always;
+	}
+	.page {
+		height: 33cm;
+	}
+}
