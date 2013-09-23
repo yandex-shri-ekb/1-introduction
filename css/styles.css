@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+.page {
+  background-color: #fff;
+  padding: 57px 76px;
+  margin: 10px 15%;
+  border: 1px solid #333;
+}
+.typo {
+  font: 14px/1.7 "Arial Narrow", Arial, sans-serif;
+}
+.typo h1 {
+  border-bottom: 2px solid #ebebeb;
+  font-size: 37px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: right;
+  padding-bottom: 13px;
+  margin-bottom: 100px;
+}
+.typo h2 {
+  font: bold 16px/1 Tahoma, Verdana, Segoe, sans-serif;
+  border-bottom: 1px solid #ebebeb;
+  color: #444;
+  margin-top: 60px;
+  margin-bottom: 21px;
+  padding-bottom: 13px;
+}
+.typo strong {
+  color: #b45f06;
+  font-weight: normal;
+}
+.typo em {
+  color: #606060;
+}
+.typo a {
+  color: #021eaa;
+}
+.code {
+  background: url("../img/code__line-gradient.png") top repeat-x;
+  border-bottom: 2px solid #ffd966;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 1.35;
+  padding: 42px 0 12px 0;
+  color: #34581e;
+  margin-top: 28px;
+  margin-bottom: 26px;
+}
+.code__str {
+  color: #b45f06;
+}
+.code__comment {
+  color: #7a7a7a;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+  .page {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .typo h1,
+  .typo h2 {
+    border-bottom-color: #333;
+  }
+  .typo strong {
+    color: #000;
+    font-weight: bold;
+  }
+  .typo em {
+    color: #000;
+  }
+  .typo p a:after {
+    text-decoration: underline;
+    content: " <" attr(href) "> ";
+  }
+  .code {
+    background: none;
+    border-top: 22px solid #ddd;
+    border-bottom-color: #ddd;
+    padding-top: 20px;
+  }
+  .code,
+  .code * {
+    color: #333;
+  }
+  .code__comment {
+    color: #999;
+  }
+}

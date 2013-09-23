@@ -1,0 +1,113 @@
+//
+// Тело страницы
+// =========================================================
+
+body
+  margin: 0
+  padding: 0
+  background-color: #ddd
+
+
+//
+// Блок страницы
+// =========================================================
+
+.page
+  background-color: #fff
+  padding: 57px 76px
+  margin: 10px 15%
+  border: 1px solid #333
+
+
+//
+// Блок типографики
+// =========================================================
+
+.typo
+  font: 14px/1.7 "Arial Narrow", Arial, sans-serif
+
+  h1
+    border-bottom: 2px solid #ebebeb
+    font-size: 37px
+    font-weight: normal
+    line-height: 1
+    text-align: right
+    padding-bottom: 13px
+    margin-bottom: 100px
+  h2
+    font: bold 16px/1 Tahoma, Verdana, Segoe, sans-serif
+    border-bottom: 1px solid #ebebeb
+    color: #444
+    margin-top: 60px
+    margin-bottom: 21px
+    padding-bottom: 13px
+  strong
+    color: #b45f06
+    font-weight: normal
+  em
+    color: #606060
+  a
+    color: #021eaa
+
+
+//
+// Блок программного кода
+// =========================================================
+
+.code
+  background: url('../img/code__line-gradient.png') top repeat-x
+  border-bottom: 2px solid #ffd966
+  font-weight: bold
+  font-size: 11px
+  line-height: 1.35
+  padding: 42px 0 12px 0
+  color: #34581e
+  margin-top: 28px
+  margin-bottom: 26px
+
+  &__str
+    color: #b45f06
+
+  &__comment
+    color: #7a7a7a
+
+
+//
+// Стиль для печати
+// =========================================================
+
+@media print
+  body
+    background-color: #fff
+
+  // Блок страницы
+  .page
+    margin: 0
+    padding: 0
+    border: none
+
+  // Блок типографики
+  .typo
+    h1, h2
+      border-bottom-color: #333
+    strong
+      color: #000
+      font-weight: bold
+    em
+      color: #000
+    p a:after
+      text-decoration: underline
+      // Добавляет гиперссылки к тексту
+      content: " <" attr(href) "> "
+
+  // Блок программного кода
+  .code
+    background: none
+    border-top: 22px solid #ddd
+    border-bottom-color: #ddd
+    padding-top: 20px
+
+    &, & *
+      color: #333
+    &__comment
+      color: #999
