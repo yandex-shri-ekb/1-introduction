@@ -9,7 +9,12 @@ body {
 
 .page {
     background-color: #fff;
+<<<<<<< HEAD
     max-width: 800px;
+=======
+    max-height: 3508px;
+    max-width: 2480px;
+>>>>>>> upload all
     min-width: 320px; /*+ padding */
     padding: 2% 5% 5% 5%;
     margin: 1.1em auto 1.1em auto;
