@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <!-- Icons -->
+        <link rel="icon" href="static/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="static/apple-touch-icon-iphone.png" /> 
+        <link rel="apple-touch-icon" sizes="72x72" href="static/apple-touch-icon-ipad.png" /> 
+        <link rel="apple-touch-icon" sizes="114x114" href="static/apple-touch-icon-iphone4.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="static/apple-touch-icon-ipad3.png" />
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css" />
+        <link rel="stylesheet" type="text/css" media="print" href="print.css">
+        <link rel="stylesheet" type="text/css" href="static/style.css" />
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cantora+One' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="page">
+            <h1>Preface</h1>
+            <p>Before you begin, it is important to understand various styles employed in this book. Please do not skip this section, because it contains important information that will aid you as you read the book.</p>
+            <h2>More code, less words</h2>
+            <p>Please examine the code examples in detail. The text should be viewed as secondary to the code itself.It is my opinion that a code example is worth a thousand words. Do not worry if youʼre initially confusedby explanations. Examine the code. Tinker with it. Reread the code comments. Repeat this processuntil the concept being explained becomes clear. I hope you achieve a level of expertise such that well-documented code is all you need to grok a programming concept.</p>
+            <h2>Exhaustive code and repetition</h2>
+            <p>You will probably curse me for repeating myself and for being so comprehensive with my codeexamples. And while I might deserve it, I prefer to err on the side of being exact, verbose, andrepetitive, rather than make false assumptions authors often make about their reader. Yes, both can beannoying, depending upon what knowledge you bring to the subject, but they can also serve a usefulpurpose for those who want to learn a subject in detail.</p>
+            <h2>Color-coding Conventions</h2>
+            <p>In the JavaScript code examples (example shown below), orange is used to highlight code directlyrelevant to the concept being discussed. Any additional code used to support the orange colored codewill be green. The color gray in the code examples is reserved for JavaScript comments (exampleshown below).</p>
+            <div class="code-box">
+                &lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;body&gt;&lt;script&gt;<br />
+               <span id="comment">// this is a comment about a specific part of the code</span><br />
+                var foo = <span id="string">'calling out this part of the code'</span>;<br />
+                &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;<br />
+            </div>
+            <p>In addition to code examples being color-coded, the text in this book is colored so as to denoteJavaScript words/keywords v.s. JavaScript code v.s. regular text. Below, I take an excerpt from thebook to demonstrate this coloring semantic.</p>
+            <p>"Consider that the cody object created from the <span class="code">Object()</span> constructor function (i.e var <span class="code">cody = newObject()</span>) is not really different from a string object created via the <span class="code">String()</span> constructor function. Todrive this fact home, examine the code below:"</p>
+            <p>Notice the use of gray italic text for code references, orange text for JavaScript words/keywords, and regular black text for everything in-between.</p>
+            <h2>jsFiddle, JS Bin, and Firebug lite-dev</h2>
+            <p>The majority of code examples in this book are linked to a corresponding <a href="http://jsfiddle.net">jsFiddle</a> page, where the codecan be tweaked and executed online. The jsFiddle examples have been configured to use the <a href="http://fbug.googlecode.com/svn/lite/branches/firebug1.3/content/firebug-lite-dev.js">Firebuglite-dev</a> plugin so that the log function (i.e. <span class="code">console.log</span>) will work in most any modern browserregardless of if the browser has its own console. Before reading this book make sure you arecomfortable with the <a href="http://stackoverflow.com/questions/4743730/javascript-what-is-console-log-and-how-do-i-use-it">usage and purpose</a> of <span class="code">console.log</span>.</p>
+            <p>In situations where jsFiddle &amp; Firebug lite-dev caused complications with the JavaScript code <a href="http://jsbin.tumblr.com/about">JS Bin</a> &amo;Firebug Lite-dev will be used. I've tried to avoid a dependency on a browser console by using Firebuglite-dev but with certain code examples the solution itself gets in the way of code execution. In thesesituations the console built into your web browser will have to be leveraged to output logs. If you are notusing a browser with a built in JavaScript console I would suggest <a href="http://browsehappy.com/">upgrading or switching browsers</a>.</p>
+            <p>When JS Bin is used, keep in mind that the code has to be executed manually (clicking 'Render') whichdiffers from the page load execution done by jsFiddle.</p>
+        </div>
+    </body>
+</html>
