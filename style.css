@@ -1,0 +1,165 @@
+body {
+    background-color: #37454F;
+}
+
+.content {
+    min-width: 550px;
+    margin: 15px 75px;
+    padding: 0 94px 45px;
+    background-color: white;
+    -webkit-box-shadow: 0px -6px 25px black;
+    -moz-box-shadow:    0px -6px 25px black;
+    box-shadow:         0px -6px 25px black;
+}
+
+/* Градиент */
+
+.grad {
+    background: -moz-linear-gradient(bottom, #FFDD68 0%, #FFF1C0 100%);
+    background: -webkit-linear-gradient(bottom, #FFDD68 0%, #FFF1C0 100%);
+    background: -o-linear-gradient(bottom, #FFDD68 0%, #FFF1C0 100%);
+    background: -ms-linear-gradient(bottom, #FFDD68 0%, #FFF1C0 100%);
+    background: linear-gradient(bottom, #FFDD68 0%, #FFF1C0 100%);
+
+    width: 100%;
+    height: 30px;
+
+    margin-bottom: 20px;
+}
+
+/* Заголовки */
+
+.bigHeader {
+    border-bottom: 4px #EBEBEB solid;
+    margin-bottom: 120px;
+
+    text-align: right;
+    padding-top: 65px;
+    padding-bottom: 15px;
+
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Arial Narrow', 'Helvetica', sans-serif;
+    color: #444444;
+
+    height: 100%;
+}
+
+.header {
+    border-bottom: 2px #EBEBEB solid; 
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    font-size: 25px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: #444444;
+    letter-spacing: -1px;
+}
+
+/* Разбиентие текста */
+
+.text {
+    margin-bottom: 45px;
+
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 32px;
+}
+
+.paragraph {
+    padding-top: 30px;
+}
+
+.code {
+    padding-bottom: 15px;
+    border-bottom: 4px #FFD966 solid; 
+
+    font-family: 'Courier', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #34581E;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+
+/*Выделение текста*/
+
+a {
+    text-decoration: underline;
+    color: #1F1EAA;
+}
+
+.comment {
+    color: #7A7A7A;
+}
+
+.mark {
+    font-family: 'Courier', sans-serif;
+    font-weight: bold;
+    color: #B45F06;
+}
+
+.empty {
+    width: 100%;
+    height: 1px;
+}
+
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .content {
+        margin: none;
+        padding: 0;
+        border: none;
+    }
+
+    .grad {
+        display: none;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:after {
+        content:" (" attr(href) ")";
+    }
+
+    .bigHeader, .header {
+        color: black;
+        border: none;
+        text-align: left;
+    }
+
+    .text {
+        margin-bottom: 14px;
+
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 22px;
+    }
+
+    .paragraph {
+        padding-top: 10px;
+    }
+
+    .code {
+        border: none;
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .bigHeader {
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        page-break-before: auto;
+    }
+}
