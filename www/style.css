@@ -1,0 +1,94 @@
+/*
+Пользуясь случаем, хочу передать привет моей маме!
+*/
+body {
+      margin: 0;
+      background-color: #CCC;   /*Задаем цвет фона, за полями листа фон будет серым*/
+      color: #333;
+        }
+  .layout {
+    width: 935px;
+    height: 1210px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+    background: #FFF; /* Цвет фона используем трехсимвольное обозначение про которое рассказывал Паша */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .east_side, .west_side, .center {
+    position: absolute;
+  }
+  .east_side {
+    width: 83px;
+  }
+  .center {
+    left: 83px;
+    width: 769px;
+     }
+  .west_side {
+     width: 83px;
+     right: 0;
+   }
+   .down_town {
+     position: relative;
+     top: 1160px; /* Опускаем элемкент в самый низ, собственно под "Douw Town" понимается номер страницы*/
+     height: 10px;
+     text-align: center;;
+   }
+
+   h1 {
+
+    font-size: 28pt;
+    float: right;
+     }
+   h2 {
+     font-family: Tahoma, Geneva, sans-serif;
+     font-size: 16pt;
+     float: left;
+   }
+   hr {
+    clear: both; /* Нужно чтобы закрыть флоат тегов <h1> & <h2>, иначе текст будет оптикаемым*/
+    border: none; /* Убираем границу */
+    background-color: #808080; /* Цвет линии */
+    color: silver; /* Цвет линии для IE6-7 */
+    height: 2px;
+    opacity: 0.3; /*в исходном документе серый был настолько бледен, что мне пршлось использовать прозрачность*/
+     }
+    hr.yellow{
+      background-color: #CC0;
+      color: #CC0;
+    }
+
+    .gradi {
+      background: #fefcea; /* Если совсем все плохо - старый браузер, режим конфуза ON*/
+      background: -moz-linear-gradient(top,  #fefcea 0%, #f4c430 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f4c430)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  #fefcea 0%,#f4c430 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  #fefcea 0%,#CC0 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  #fefcea 0%,#CC0 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  #fefcea 0%,#CC0 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#CC0',GradientType=0 ); /* IE6-9 */
+      padding: 6px;
+     }
+     /*Может вы это не прочитаете, но в валидаторе w3valid на градиент пришлось 4 ошибки(attempt to find a semi-colon before the property name. add it) (Property progid doesn't exist : DXImageTransform) - сочту это то, что градиент оффициально еще не вышел*/
+
+   code {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 14pt;
+      font-weight:bold;
+    }
+    .green {
+      color: #4f7942; /*Путем поиска цвета Яндекс определил, что цвет "зеленого папоротника", так что яндекс не только, чтобы пинговать*/
+    }
+    .grey {
+      color: #676767;
+    }
+    .ohra {
+      color:#b45f06;
+    }
+
+    .content {
+       font-family: Verdana, Geneva, sans-serif;
+       font-size: 14pt;
+     }

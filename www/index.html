@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>JavaScript_Enlightenment.html</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen,projection"> <!-- основной файл -->
+  <link rel="stylesheet" href="print.css" type="text/css" media="print"> <!-- для печати -->
+ </head>
+ <body>
+    <br/> <!--  Можно ли начинать повествование тега боди с <br/> оставляет в душе сомнения и грусть -->
+    <div class="layout">
+        <div class="east_side"></div>
+            <div class="center">
+                 <h1>Preface</h1>
+                    <hr>  <!-- Тег отвечает за визуальное отображение линии, так же как и <br> не нужен закрывающий тег -->
+   <br>
+   <p class="content">
+        Before you begin, it is important to understand various styles employed
+        in this book. Please do not skip this section, because it contains important information that will a id you as you read the book.
+   </p>
+        <br>
+                <h2>More code, less words</h2>
+                    <hr>
+        <br>
+    <p class="content">
+Please examine the code examples in detail. The text should be viewed as secondary to the code itself.It is my opinion that a code
+example is worth a thousand words. Do not worry if you&#700;re initially confusedby explanations. Examine the code. Tinker with it. Reread the
+code comments. Repeat this processuntil the concept being explained becomes clear. I hope you achieve a level of expertise such that
+well-documented code is all you need to grok a programming concept.
+    </p>
+                <h2>Exhaustive code and repetition</h2>
+                    <hr>
+    <p class="content">You will probably curse me for repeating myself and for being so comprehensive with my codeexamples. And while I might deserve it, I prefer to err on the side of being
+exact, verbose, andrepetitive, rather than make false assumptions authors often make about their reader. Yes, both can beannoying,
+depending upon what knowledge you bring to the subject, but they can also serve a usefulpurpose for those who want to learn a subject in detail.
+    </p>
+                <h2>Color-coding Conventions</h2>
+                    <hr>
+    <p class="content">In the JavaScript code examples (example shown below), orange is used to highlight code directlyrelevant to the
+    concept being discussed. Any additional code used to support the orangecolored codewill be green. The color gray in the code examples is reserved for JavaScript comments (exampleshown below).
+    </p>
+                    <hr class="gradi"><!-- тег HR почи как ШРИ-->
+                <code><!-- Вствка кода HTML, в виде "текст" на страницу книги - реализована через спец. символы -->
+                <span class="green">&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;body&gt;&lt;script&gt;<br/><span class="grey">// this is a comment about a specific part of the code</span><br/>var foo = <span class="ohra">&#39;calling out this part of the code&#39;</span>;<br/><br/>&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</span>
+                </code>
+                    <hr class="yellow"></hr>
+            </div>
+        <div class="west_side"></div>
+        <div class="down_town">13</div>
+    </div>
+    <br/><!-- Разрыв страницы -->
+        <div class="layout">
+            <div class="east_side"></div>
+                <div class="center">
+                    <p class="content">In addition to code examples being color-coded, the text in this book is colored so as to denoteJavaScript words/keywords
+                    v.s. JavaScript code v.s. regular text. Below, I take an excerpt from thebook to demonstrate this coloring semantic.
+                    </p>
+                    <p class="content">Consider that the <code class="grey"><i>cody</i></code> object created from
+                        <code class="ohra">theObject()</code> constructor function (i.e <code class="ohra">var cody = newObject()</code>) is not really different from a string object created via
+                        <code class="ohra">theString()</code> constructor function. Todrive this fact home, examine the code below:"</p>
+                            <p class="content">Notice the use of gray italic text for code references, orange text for JavaScript words/keywords, andregular black text for everything in-between.</p>
+                                    <h2>jsFiddle, JS Bin, and Firebug lite-dev</h2>
+                    <hr>
+                            <p class="content">The majority of code examples in this book are linked to a corresponding <a href="http://jsfiddle.net/">jsFiddlepage</a>, where the codecan be tweaked and executed
+                            online. The jsFiddle examples have been configured to use <a href="http://fbug.googlecode.com/svn/lite/branches/firebug1.3/content/firebug-lite-dev.js">theFirebug lite-dev</a>
+                            plugin so that the log function (i.e. <code class="ohra">console.log</code>) will work in most any modern browserregardless of if the browser has its own console.
+                            Before reading this book make sure you are comfortable with the <a href="http://stackoverflow.com/questions/4743730/what-is-console-log-and-how-do-i-use-it">usage and purpose</a> of
+                            <code class="ohra">xconsole.log</code>.
+                            </p>
+                                <p class="content">In situations where jsFiddle &amp; Firebug lite-dev caused complications with the JavaScript code <a href="http://jsbin.tumblr.com/about">JS Bin</a> &amp; Firebug Lite-dev will be used. I've tried to avoid a dependency
+                                on a browser console by using Firebuglite-dev but with certain code examples the solution itself gets in the way of code execution.
+                                In these situations the console built into your web browser will have to be leveraged to output logs. If you are notusing a browser with a built in JavaScript console I would suggest <a href="http://browsehappy.com/">upgrading or switching browsers</a>.
+                                </p>
+                            <p class="content">When JS Bin is used, keep in mind that the code has to be executed manually (clicking 'Render') which differs from the page load execution done by jsFiddle.
+                            </p><!--А нужно ли было переносить закрывающий тег на новую строчку? Надо не забыть спросить во вторник -->
+                </div>
+                    <div class="west_side"></div>
+                    <div class="down_town">14</div>
+        </div>
+                    <br/>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+    br {page-break-before: always;}   /*При использовани тега <br> будет выводиться новый лист, но в этом вся задумка для остального <p>*/
+    a:after {content:" <" attr(href) ">"};   /* Добавляем после имени ссылки, саму ссылку (при печати мы же не кликнем на бумагу - эйч http://demosthenes.info/blog/119/Creating-Stylesheets-for-Print */
