@@ -1,0 +1,106 @@
+body {
+    background: #ccc;
+    margin: 0;
+}
+.chapter {
+    background: #fff;
+    -webkit-box-shadow: 0 0 10px #555;
+       -moz-box-shadow: 0 0 10px #555;
+         -o-box-shadow: 0 0 10px #555;
+            box-shadow: 0 0 10px #555;
+    margin: 20px auto;
+    padding: 55px 85px;
+    position: relative;
+    width: 770px;
+}
+h2 {
+    border-bottom: 4px solid #eaeaea;
+    color: #454545;
+    font: 400 42px 'Arial Narrow', Helvetica, sans;
+    margin: 0 0 118px;
+    padding-bottom: 12px;
+    text-align: right;
+}
+h3 {
+    border-bottom: 2px solid #eaeaea;
+    color: #454545;
+    font: 700 20px Tahoma, Geneva, sans-serif;
+    margin: 64px 0 22px;
+    padding: 0 0 12px;
+}
+p {
+    font: 17px/28px Helvetica, Arial, sans-serif;
+    margin: 20px 0;
+}
+pre {
+    color: #375a26;
+    font: 700 100% 'Courier New', Courier, monospace;
+    border-bottom: 3px solid #fcdf6c;
+    border-top: 25px solid #fcdf6c;
+    margin: 30px 0 0;
+    padding: 20px 0 0;
+    position: relative;
+}
+/* браузеры, непонимающие ::before или градиентов, будут видеть одноцветную рамку */
+pre::before {
+    background: -o-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
+    background: -moz-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
+    background: -webkit-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
+    background: -ms-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
+    background: linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
+    content: "";
+    display: block;
+    height: 25px;
+    position: absolute;
+    top: -25px;
+    width: 100%;
+}
+pre .comment {
+    color: #797979;
+}
+pre .string {
+    color: #af601b;
+}
+code {
+    font: 100% 'Courier New', Courier, monospace;
+}
+code.kw {
+    color: #af601b;
+}
+code.cr {
+    color: #606060;
+    font: italic 100% Helvetica, Arial, sans-serif;
+}
+@page {
+    margin: 45px 75px;
+    size: portrait;
+}
+@media print {
+    body {
+        background: none;
+    }
+    .chapter {
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+             -o-box-shadow: none;
+                box-shadow: none;
+        padding: 10px;
+        page-break-after: always;
+    }
+    h3 {
+        page-break-after: avoid;
+    }
+    pre::before {
+        display: none;
+    }
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    a[href^=http]::after {
+        content: ' [' attr(href) ']';
+    }
+    a[href^=http]:after { /* for IE8 */
+        content: ' [' attr(href) ']';
+    }
+}
