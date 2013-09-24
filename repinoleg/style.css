@@ -1,85 +1,62 @@
-/* style.css */
-* {margin:0;padding:0;}
-
 section {
 	width: 770px;
-	margin:58px auto;
-	font-size: 17px;
+	margin: 58px auto;
+	padding: 0;
 }
-
 	h1 {
-		font-family: "Arial Narrow", Arial, sans-serif;
+		margin: 0 0 118px;
+		border-bottom: 4px solid #ebebeb;
+		padding: 0 0 15px;
+		font: 400 43px/43px "Arial Narrow", Arial, sans-serif;
 		color: #444;
 		text-align: right;
-		font-weight: 400;
-		font-size: 252.9411764705882%;
-		line-height: 1;
-		padding-bottom: 15px;
-		border-bottom: 4px solid #ebebeb;
-		margin-bottom: 118px;
 	}
-
 	h2 {
 		margin: 57px 0 10px;
-		font-family: "Verdana Pro", Verdana, sans-serif;
-		font-size: 117.6470588235294%;
-		line-height: 2;
-		color:#444;
-		padding-bottom: 4px;
 		border-bottom: 2px solid #ebebeb;
+		padding: 0 0 4px;
+		font: 700 20px/40px "Verdana Pro", Verdana, sans-serif;
+		color: #444;
 	}
-
 	p {
-		font-family: Helvetica, Arial, sans-serif;
+		margin: 21px 0 7px;
+		padding: 0;
+		font: 400 17px/28px Helvetica, Arial, sans-serif;
 		color: #000;
-		font-size: 100%;
-		line-height: 1.647058823529412;
-		margin:21px 0 7px;
 	}
 		.ref {
 			font-style: italic;
-			color:#606060;
+			color: #606060;
 		}
 		.js {
-			font-family: "Courier New", monospace;
+			font: 15px/28px "Courier New", monospace;
 			color: #b45f06;
-			font-size: 88.23529411764706%;
-			line-height: 1.866666666666667;
 		}
 		a {
-			color:#021eaa;
+			color: #021eaa;
 		}
-
 	.listing {
-		padding: 0 0 10px;
+		margin: 0 0 28px;
 		border-bottom: 3px solid #ffd966;
-		margin-bottom: 28px;
+		padding: 0 0 10px;
 	}
 		.listing:before{
-			content:"";
+			content: "";
 			display: block;
-			margin:30px 0 15px;
-			height:25px;
+			height: 25px;
+			margin: 30px 0 15px;
 			background: #ffd966;
-			background: -moz-linear-gradient(to bottom, #fff2c4, #ffdd66);
-			background: -webkit-gradient(to bottom, #fff2c4, #ffdd66);
-			background: -webkit-linear-gradient(to bottom, #fff2c4, #ffdd66);
-			background: -o-linear-gradient(to bottom, #fff2c4, #ffdd66);
-			background: -ms-linear-gradient(to bottom, #fff2c4, #ffdd66);
-			background: linear-gradient(to bottom, #fff2c4, #ffdd66);
+			background:        -webkit-gradient(to bottom, #fff2c4, #fd6);
+			background: -webkit-linear-gradient(to bottom, #fff2c4, #fd6);
+			background:    -moz-linear-gradient(to bottom, #fff2c4, #fd6);
+			background:     -ms-linear-gradient(to bottom, #fff2c4, #fd6);
+			background:      -o-linear-gradient(to bottom, #fff2c4, #fd6);
+			background:         linear-gradient(to bottom, #fff2c4, #fd6);
 		}
 		.listing p {
-			font-family: Courier, "Courier New", monospace;
+			font: 700 14px/15px Courier, "Courier New", monospace;
 			color: #34581e;
-			font-size: 82.35294117647059%;
-			font-weight:700;
-			line-height: 108%;
 		}
-			.listing p span {
-				font-size: inherit;
-				font-weight: inherit;
-				line-height: inherit;
-			}
 			.comment {
 				color: #7a7a7a;
 			}
@@ -88,11 +65,9 @@ section {
 			}
 
 @media print {
-	
 	section {
 		margin: 0 auto;
 	}
-
 		h2 {
 			page-break-after: avoid;
 		}
@@ -100,13 +75,12 @@ section {
 			/* Вместо .listing:before вставим одноцветную границу того же размера */
 			margin-top: 30px;
 			border-top: 25px solid #ffd966;
-			padding-top:15px;
-			page-break-inside: avoid;
+			padding-top: 15px;
 		}
 			.listing:before{
 				display: none;
 			}
-		p {
+		p, .listing {
 			page-break-inside: avoid;
 		}
 		a {
@@ -116,9 +90,9 @@ section {
 			border-bottom: 1px solid #021eaa;
 		}
 		a:after {
+			content: " (" attr(href) ")";
 			font-weight: 400;
-			content:" (" attr(href) ")";
-			color:#000;
+			color: #000;
 			/*... а у ее адреса ставим БЕЛУЮ - в цвет фона, тогда ее как бы и нет :) Проверял как работает не в @media print {} - отображается правильно в браузерах, но в предварительном просмотре печати иногда отображает светлоголубое подчеркивание у адреса ссылки */
 			border-bottom: 2px solid #fff;
 		}
