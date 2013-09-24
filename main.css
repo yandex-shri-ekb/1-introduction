@@ -16,9 +16,7 @@ body {
 h2 {
     border-bottom: 4px solid #eaeaea;
     color: #454545;
-    font-family: 'Arial Narrow', Helvetica, sans;
-    font-size: 42px;
-    font-weight: normal;
+    font: normal 42px 'Arial Narrow', Helvetica, sans;
     margin: 0 0 118px;
     padding-bottom: 12px;
     text-align: right;
@@ -26,22 +24,17 @@ h2 {
 h3 {
     border-bottom: 2px solid #eaeaea;
     color: #454545;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font: bold 20px Tahoma, Geneva, sans-serif;
     margin: 64px 0 22px;
     padding: 0 0 12px;
 }
 p {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 17px;
-    line-height: 28px;
+    font: 17px/28px Helvetica, Arial, sans-serif;
     margin: 20px 0;
 }
 pre {
     color: #375a26;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font: bold 100% 'Courier New', Courier, monospace;
     border-bottom: 3px solid #fcdf6c;
     border-top: 25px solid #fcdf6c;
     margin: 30px 0 0;
@@ -50,11 +43,11 @@ pre {
 }
 /* браузеры, непонимающие ::before или градиентов, будут видеть одноцветную рамку */
 pre::before {
-    background-image: -o-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
-    background-image: -moz-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
-    background-image: -webkit-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
-    background-image: -ms-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
-    background-image: linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
+    background: -o-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
+    background: -moz-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
+    background: -webkit-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
+    background: -ms-linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
+    background: linear-gradient(bottom, #fcdf6c 0%, #fdf4c6 100%);
     content: "";
     display: block;
     height: 25px;
@@ -69,15 +62,14 @@ pre .string {
     color: #af601b;
 }
 code {
-    font-family: 'Courier New', Courier, monospace;
+    font: 100% 'Courier New', Courier, monospace;
 }
 code.kw {
     color: #af601b;
 }
 code.cr {
     color: #606060;
-    font-family: inherit;
-    font-style: italic;
+    font: italic 100% Helvetica, Arial, sans-serif;
 }
 @page {
     margin: 45px 75px;
@@ -92,8 +84,8 @@ code.cr {
            -moz-box-shadow: none;
              -o-box-shadow: none;
                 box-shadow: none;
-        page-break-after: always;
         padding: 10px;
+        page-break-after: always;
     }
     h3 {
         page-break-after: avoid;
