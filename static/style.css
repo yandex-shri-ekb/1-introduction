@@ -61,3 +61,11 @@ body {
 .code-box #comment {
     color: #7a7a7a;
 }
+
+@media print {
+    .page {
+        margin: auto auto;
+        width: 100%;
+        font-size: 1.6em;
+    }
+}
