@@ -4,14 +4,12 @@ body{
     background-color: #333333;
     }
 .article{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.75;
+    font: 17px/1.62 Helvetica, Arial, sans-serif;
     color: #000;
     padding: 35px 85px;
     margin: 0 auto;
-    max-width: 765px;
-    background-color: #FFF;
+    max-width: 760px;
+    background: #FFF;
     display: block;
     }
 h1, h2{
@@ -24,24 +22,25 @@ h1, h2{
         font-size: 41px;
         font-weight: normal;
         text-align: right;
-        border-bottom-width: 4px;
-        margin: 0 0 125px 0;
+        border-width: 4px;
+        margin: 15px 0 120px 0;
         }
     h2{
         font-size: 20px;
         line-height: 2.4;
-        margin: 50px 0 20px 0;
+        margin: 50px 0 25px 0;
         }
 p{
-    margin: 28px 0;
+    margin: 25px 0;
     }
+pre, code{
+    font: 700 14px "Courier New", monospace;
+}
 pre{
-    font-family: "Courier New", monospace;
-    font-weight: 700;
     line-height: 1.45;
     color: #34581E;
     border-bottom: 3px solid #FFD966;
-    padding-bottom: 10px;
+    padding: 0 0 10px 0;
     margin: 25px 0;
     }
     pre:before{
@@ -65,12 +64,10 @@ pre{
         color: #B45F06;
         }
 code{
-    font-family: "Courier New", monospace;
-    font-weight: 700;
     color: #B45F06;
     }
 .page-break{
-    page-break-after: auto;
+    /*page-break-after: always;*/
     display: block;
     height: 0;
     }
