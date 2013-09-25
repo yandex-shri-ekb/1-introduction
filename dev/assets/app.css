@@ -1,5 +1,5 @@
 /* Normalize css 0.0.1 | 2013, Sergey Gogolev (gogoleff@gmail.com) | CC BY 3.0 */
-/* Based on normalize.css 2.1.3 and 1.1.3 | Nicolas Gallagher (git.io/normalize) | MIT */
+/* Inspired by normalize.css 2.1.3 and 1.1.3 | Nicolas Gallagher (git.io/normalize) | MIT */
 /* [HTML5] */
 /* Correct `block` display not defined in IE 8/9 */
 article,
@@ -22,21 +22,21 @@ canvas,
 video {
   display: inline-block;
 }
-/* Prevent modern browsers from displaying `audio` without controls */
+/* Prevent modern browsers from displaying <audio> without controls */
 /* Remove excess height in iOS 5 devices */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
-/* Address `[hidden]` styling not present in IE 8/9 */
-/* Hide the `template` element in IE, Safari, and Firefox < 22 */
+/* Address <[hidden]> attribute styling not present in IE 8/9 */
+/* Hide the <template> element in IE, Safari, and Firefox < 22 */
 [hidden],
 template {
   display: none;
 }
 /* [HTML and BODY] */
 /* Set default font family to sans-serif */
-/* Prevent iOS text size adjust after orientation change, without disabling user zoom */
+/* Prevent text size adjust after orientation change, without disabling user zoom in iOS and Windows Phone */
 html {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   -ms-text-size-adjust: 100%;
@@ -63,32 +63,20 @@ a:hover {
   outline: 0;
 }
 /* [TYPOGRAPHY] */
-/* Remove margin and set default font size */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-size: 12px;
-  font-weight: normal;
-  margin: 0;
-}
-/* Address `abbr` styling not present in IE 8/9, Safari 5, and Chrome */
+/* Address <abbr> styling not present in IE 8/9, Safari 5, and Chrome */
 abbr[title] {
   border-bottom: 1px dotted;
 }
-/* Address `b` and `strong` styling not present in Firefox 4+, Safari 5, and Chrome */
+/* Address <b> and <strong> styling not present in Firefox 4+, Safari 5, and Chrome */
 b,
 strong {
   font-weight: bold;
 }
-/* Address `dfn` styling (cursive font style) not present in Safari 5 and Chrome */
+/* Address <dfn> styling not present in Safari 5 and Chrome */
 dfn {
   font-style: italic;
 }
-/* Remove differences between Firefox and other browsers */
+/* Remove differences between Firefox and other browsers for <hr> */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -99,17 +87,16 @@ mark {
   background: #ff0;
   color: #000;
 }
-/* Improve readability of pre-formatted text in all browsers */
+/* Set default font of pre-formatted text in all browsers */
+/* Set default white space behaviour */
 code,
 kbd,
 pre,
 samp {
-  margin: 0;
-  font-family: monospace, serif;
-  font-size: 12px;
+  font: 400 12px monospace, serif;
   white-space: pre-wrap;
 }
-/* Address inconsistent and variable font size in all browsers */
+/* Address <small> inconsistent and variable font size in all browsers */
 small {
   font-size: 80%;
 }
@@ -144,9 +131,6 @@ q:after {
 /* Set default marker position for <ul> and <ol> */
 ol,
 ul {
-  position: relative;
-  padding: 0;
-  margin: 0;
   list-style-position: outside;
 }
 /* Remove default list markers from <ul> */
@@ -164,7 +148,7 @@ table {
   border-spacing: 0;
 }
 /* Set default alignment (top, left) for <td> and <th> */
-/* Remove user agent 1px padding in <td> and <th> in IE 8 */
+/* Remove user agent 1px padding in <td> and <th> in IE 8 and firefox */
 th,
 td {
   vertical-align: top;
@@ -185,13 +169,6 @@ figure {
   margin: 0;
 }
 /* [FORMS] */
-/* Remove border, margins and paddings from <fieldset> and <legend> */
-fieldset,
-legend {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
 /* Correct font family not being inherited in all browsers */
 /* Correct font size not being inherited in all browsers */
 /* Address margins set differently in Firefox 4+, Safari 5, and Chrome */
@@ -251,7 +228,7 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-/* Remove inner padding and border in Firefox 4+ */
+/* Remove <button> and <input> inner padding and border in Firefox 4+ */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -262,6 +239,39 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   vertical-align: top;
+}
+/* Remove default margins and paddings from <ul> and <ol> */
+ol,
+ul {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+/* Remove default margins and paddings from headers and paragraphs */
+/* Set default font size and weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font: 400 12px inherit;
+  margin: 0;
+}
+/* Remove default margins from <pre>, <code>, etc */
+code,
+kbd,
+pre,
+samp {
+  margin: 0;
+}
+/* Remove default border, margins and paddings from <fieldset> and <legend> */
+fieldset,
+legend {
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 /* [IE7] */
 /* Display <audio>, <video>, <canvas> elements as inlines in IE 7 */
