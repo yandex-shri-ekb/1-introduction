@@ -12,53 +12,62 @@ body{
     -o-box-shadow: 0 0 10px #555;
     box-shadow: 0 0 10px #555;
 }
+h1,
+h3{
+    border-bottom: solid #EBEBEB;
+}
 h1{
-    font-family: Arial Narrow, sans-serif;
-    text-align: right;
-    font-weight: normal;
-    font-size: 28pt;
-    line-height: 35pt;
-    border-bottom: solid 2px #EBEBEB;
-    padding: 8px 0 10px 0;
-    margin: 0 0 100px 0;
+    font: 300 28pt/35pt Arial Narrow, sans-serif;
     color: #444;
+    text-align: right;
+    padding: 8px 0 10px;
+    margin: 0 0 100px 0;
+    border-width: 2px;
 }
 h3 {
-    font-family: Tahoma, sans-serif;
+    font: 900 13pt Tahoma, sans-serif;
     margin: 58px 0 16px;
-    font-size: 13pt;
     color: #454545;
-    border-bottom: solid 1px #ECECEC;
-    padding-bottom: 10px;
+    padding: 0 0 10px 0;
+    border-width: 1px;
 }
 p{
     color: #000;
-    font-size: 11pt;
-    font-family: Helvetica, sans-serif;
-    line-height: 25px;
+    font: 11pt/25px Helvetica, sans-serif;
 }
 a:visited{
     color: #00F;
 }
 code,
 .code{
-    font-family: Courier New;
-    font-weight: bold;
+    font: 900 10pt Courier New, monospace;
 }
 code{
     color: #34571E;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAIAAACOpGH9AAAACXBIWXMAAAsSAAALEgHS3X78AAAAX0lEQVR42g3DrQ6CYABA0fu8FgvFQDEQLAYLG4VAsLhRDASDwdcQJ/6BAo4XuHxnOzhd8H/G8RRWOByxL/F3wO8euwLbHD8ZvlN87fC5xccGmwTv6zDG2wrrCK/LcDEDxCs29KYphTQAAAAASUVORK5CYII=) repeat-x;
     display: block;
-    padding: 35px 0 10px;
+    padding: 0 0 10px 0;
     border-bottom: solid 2px #FFD966;
-    font-size: 9pt;
-    line-height: 18px;
+    font: 9pt/18px;
+}
+code:before{
+    content: '';
+    height: 19px;
+    width: 100%;
+    display: block;
+    margin: 40px 0 20px;
+    background: #ffd856;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAIAAACOpGH9AAAACXBIWXMAAAsSAAALEgHS3X78AAAAX0lEQVR42g3DrQ6CYABA0fu8FgvFQDEQLAYLG4VAsLhRDASDwdcQJ/6BAo4XuHxnOzhd8H/G8RRWOByxL/F3wO8euwLbHD8ZvlN87fC5xccGmwTv6zDG2wrrCK/LcDEDxCs29KYphTQAAAAASUVORK5CYII=) repeat-x;
+    background: -moz-linear-gradient(top, #FFF2C5, #FFE079);
+    background: -ms-linear-gradient(top, #FFF2C5, #FFE079);
+    background: -o-linear-gradient(top, #FFF2C5, #FFE079);
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF2C5), to(#FFE079));
+    background: -webkit-linear-gradient(top, #FFF2C5, #FFE079);
+    background: linear-gradient(top, #FFF2C5, #FFE079);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FFF2C5', endColorstr = '#FFE079');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FFF2C5', endColorstr = '#FFE079')";
 }
 code .comment{
     color: #7A7A7A;
-}
-p .code{
-    font-size: 10pt;
 }
 code .string,
 p .code{
