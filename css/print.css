@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* Блок страницы */
+.page ~ .page {
+    page-break-before: always;
+}
+
+.page__number {
+    display: none;
+}
+
+
+/* Блок типографики */
+.typo {
+    font: 10.5pt/1.7 Arial, Helvetica, sans-serif;
+}
+
+.typo h1,
+.typo h2 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 13px;
+}
+
+.typo h1 {
+    margin: 25px 0 100px 0;
+    font: normal 28pt/1 Arial, Helvetica, sans-serif;
+    text-align: right;
+    border-width: 2px;
+}
+
+.typo h2 {
+    margin: 60px 0 21px 0;
+    font: bold 12pt/1 Tahoma, Geneva, sans-serif;
+}
+
+.typo p a:after {
+    text-decoration: underline;
+    content: " <" attr(href) "> ";
+}
+
+
+/* Блок программного кода */
+.code {
+    margin: 28px 0 26px 0;
+    padding: 20px 0 12px 0;
+    border-top: 22px solid #ccc;
+    font: bold 11px/1.35 "Courier New", Courier, monospace;
+    border-bottom: 2px solid #ccc;
+}
+
+.code__comment {
+    color: #777;
+}
