@@ -1,138 +1,122 @@
 @font-face {
-  font-family: "ArialNarrow";
-  src: url("fonts/ArialNarrow.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Courier New";
-  src: url("fonts/CourierNew.ttf") format("truetype");
-  font-weight: normal;
+  src: local("Courier New"), url("fonts/CourierNewBold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Courier New";
-  src: url("fonts/CourierNewBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+html {
+  color: #444;
+  background: #ccc;
 }
 
-/* line 23, index.sass */
+body, div, h2, h3, pre, code {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: sans-serif;
-  background: #cccccc;
+  font: 15px/100% sans-serif;
   padding-bottom: 20px;
-  font-size: 15px;
-  color: #444444;
 }
 
-/* line 30, index.sass */
 p {
-  color: black;
+  color: #000;
   line-height: 24px;
   margin-bottom: 34px;
 }
 
-/* line 35, index.sass */
-a {
-  color: #0239d0;
-}
-/* line 37, index.sass */
-a:visited {
+a, a:visited {
   color: #0239d0;
 }
 
-/* line 40, index.sass */
-h2 {
-  font-family: "ArialNarrow", sans-serif;
-  font-size: 38px;
-  margin: -7px 0 106px;
-  padding-bottom: 8px;
+.preface {
+  background: url("images/preface.png") no-repeat top right;
+  font-size: 0;
+  height: 30px;
+  padding-bottom: 15px;
   border-bottom: 3px solid #ebebeb;
-  text-align: right;
-  color: #444444;
+  margin: 0 0 106px;
 }
 
-/* line 49, index.sass */
 h3 {
-  font-size: 18px;
-  font-weight: bold;
+  font: 700 18px sans-serif;
   border-bottom: 2px solid #ebebeb;
   padding-bottom: 8px;
   margin: 59px 0 20px;
 }
 
-/* line 56, index.sass */
 #page {
   width: 816px;
   margin: 0 auto;
   padding-top: 3px;
 }
 
-/* line 61, index.sass */
 .sheet {
   position: relative;
+  background: white;
   height: 1056px;
   margin: 0 auto 14px;
   box-shadow: 0 0 5px 2px #979797;
-  background: white;
   text-align: left;
 }
-/* line 69, index.sass */
-.sheet .sheet-number {
-  font-size: 13px;
-  font-family: sans-serif;
+
+.number {
   position: absolute;
   left: 50%;
-  width: 30px;
-  text-align: center;
-  margin-left: -15px;
   bottom: 18px;
-  color: black;
+  font-size: 13px;
+  color: #000;
+  text-align: center;
+  width: 30px;
+  margin-left: -15px;
 }
 
-/* line 80, index.sass */
 .sheet-offset {
   padding: 56px 72px 60px 72px;
 }
 
-/* line 83, index.sass */
-code {
-  font-family: "Courier New", sans-serif;
-  color: #37571e;
-  font-size: 13px;
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-/* line 90, index.sass */
-code .comment {
-  color: #7a7a7a;
-}
-/* line 93, index.sass */
-code .string {
-  color: #c45e05;
-  font-weight: bold;
-}
-
-/* line 97, index.sass */
 .code-start {
-  display: block;
   height: 22px;
   background: url("images/code-start.png") left bottom repeat-x;
 }
 
-/* line 103, index.sass */
 .code-block code {
   display: block;
   font-size: 12px;
 }
 
-/* line 107, index.sass */
+code {
+  font: 700 13px/150% "Courier New", sans-serif;
+  color: #37571e;
+  margin-bottom: 4px;
+}
+
+code .comment {
+  color: #7a7a7a;
+}
+code .string {
+  color: #c45e05;
+}
+
 .code-end {
-  display: block;
-  margin: -26px 0 20px;
-  height: 4px;
   background: url("images/code-end.png") left bottom repeat-x;
+  margin: -22px 0 20px;
+  height: 4px;
+}
+
+@media print {
+  .preface {
+    font: 300 38px/110% sans-serif;
+    color: #444;
+    text-align: right;
+    margin-top: -7px;
+    padding-bottom: 20px;
+  }
+  .code-start {
+	  border-top: 2px solid #ebebeb;
+  }
+  .code-end {
+	  border-bottom: 2px solid #ebebeb;
+  }
 }
