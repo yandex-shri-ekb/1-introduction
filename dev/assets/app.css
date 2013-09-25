@@ -133,20 +133,22 @@ sub {
   }
 }
 /* [BOOK CODE] */
+.book-code code,
+.book-code-comment,
+.book-code-relevant {
+  font: 700 13px 'Courier New';
+}
 .book-code {
   position: relative;
   margin: 0 0 30px;
   padding: 15px 0;
-  font: bold 13px 'Courier New';
   color: #34581e;
   border-bottom: #ffd966 solid 2px;
 }
 .book-code-relevant {
-  font: bold 13px 'Courier New';
   color: #b45f06;
 }
 .book-code-comment {
-  font: bold 13px 'Courier New';
   color: #747474;
 }
 .book-code-before {

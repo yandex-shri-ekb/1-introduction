@@ -5,21 +5,23 @@ bookCodeColor=#34581e
 bookCodeColorRelevant=#b45f06
 bookCodeColorComment=#747474
 
+.book-code code,
+.book-code-comment,
+.book-code-relevant
+  font 700 13px 'Courier New'
+
 /* Styles */
 .book-code
   position relative
   margin 0 0 30px
   padding 15px 0
-  font bold 13px 'Courier New'
   color bookCodeColor
   border-bottom #ffd966 solid 2px
 
   &-relevant
-    font @font
     color bookCodeColorRelevant
 
   &-comment
-    font @font
     color bookCodeColorComment
 
   &-before
