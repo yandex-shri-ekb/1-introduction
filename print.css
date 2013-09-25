@@ -1,0 +1,17 @@
+body{
+    background: #FFF;
+    margin: 0;
+    }
+.article{
+    padding: 0;
+    max-width:none;
+    }
+a[href]:after{
+    content: '('attr(href)')';
+    text-decoration: none;
+    color: #333;
+    }
+pre:before{
+    border-top: 25px solid #FFD966;
+    height: 0;
+}
