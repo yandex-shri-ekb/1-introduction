@@ -85,6 +85,12 @@ sub {
   background: #999;
   color: #000;
 }
+.book {
+  position: relative;
+  max-width: 810px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 @media print {
   @page {
     margin: 40px 70px;
@@ -92,9 +98,7 @@ sub {
 }
 /* [BOOK CHAPTER] */
 .chapter {
-  margin: 0 auto;
   padding: 50px 70px 0;
-  width: 670px;
   background: #fff;
 }
 .chapter-group {
@@ -121,12 +125,6 @@ sub {
 }
 .chapter-em {
   color: #5d5d5d;
-}
-/* Remove width resctriction on small screens */
-@media screen and (max-width: 810px) {
-  .chapter {
-    width: auto;
-  }
 }
 /* Remove padding on chapter element because print page already has it */
 @media print {
