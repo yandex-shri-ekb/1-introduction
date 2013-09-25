@@ -13,3 +13,4 @@
 ## Решение
 * [Посмотреть](http://gogoleff.github.io/1-introduction/dev/)
 * [Исходный код](https://github.com/gogoleff/1-introduction/tree/master/dev)
+* [Чистое решение (html and css only)](https://github.com/gogoleff/1-introduction/tree/master/pure)

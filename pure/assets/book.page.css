@@ -1,0 +1,22 @@
+/* [BOOK PAGE] */
+
+.page {
+    background: #999;
+    color: #000;
+}
+
+.book {
+    position: relative;
+    max-width: 810px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* [PRINT: book page] */
+@media print {
+
+    @page {
+        margin: 40px 70px;
+    }
+
+}

@@ -1,0 +1,45 @@
+/* [BOOK CHAPTER] */
+
+.chapter {
+    padding: 50px 70px 0;
+    background: #fff;
+}
+
+.chapter-group {
+    padding: 0 0 30px;
+}
+
+.chapter-h1 {
+    margin: 0 0 100px;
+    padding: 0 0 8px;
+    text-align: right;
+    font: 400 37px/43px 'Arial Narrow', Arial, sans-serif;
+    color: #343434;
+    border-bottom: #e5e5e5 solid 2px;
+}
+
+.chapter-h2 {
+    margin: 0 0 20px;
+    padding: 0 0 6px;
+    font: 700 17px/27px Tahoma, Geneva, sans-serif;
+    color: #343434;
+    border-bottom: #e5e5e5 solid 1px;
+}
+
+.chapter-p {
+    margin: 0 0 30px;
+    font: 15px/25px Helvetica, Arial, sans-serif;
+}
+
+.chapter-em {
+    color: #5d5d5d;
+}
+
+/* [PRINT: book chapter] */
+@media print {
+
+    .chapter {
+        padding: 0;
+    }
+
+}
