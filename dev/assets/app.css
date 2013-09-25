@@ -1,39 +1,5 @@
 /* Normalize css 0.0.1 | 2013, Sergey Gogolev (gogoleff@gmail.com) | CC BY 3.0 */
 /* Inspired by normalize.css 2.1.3 and 1.1.3 | Nicolas Gallagher (git.io/normalize) | MIT */
-/* [HTML5] */
-/* Correct `block` display not defined in IE 8/9 */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-/* Correct `inline-block` display not defined in IE 8/9 */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-/* Prevent modern browsers from displaying <audio> without controls */
-/* Remove excess height in iOS 5 devices */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-/* Address <[hidden]> attribute styling not present in IE 8/9 */
-/* Hide the <template> element in IE, Safari, and Firefox < 22 */
-[hidden],
-template {
-  display: none;
-}
 /* [HTML and BODY] */
 /* Set default font family to sans-serif */
 /* Prevent text size adjust after orientation change, without disabling user zoom in iOS and Windows Phone */
@@ -113,197 +79,6 @@ sup {
 }
 sub {
   bottom: -0.25em;
-}
-/* [QUOTES] */
-/* Remove quotes from <blockquote> and <q> */
-blockquote,
-q {
-  quotes: none;
-}
-/* Remove quotes from <blockquote> and <q> in Safari */
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: none;
-}
-/* [LISTS] */
-/* Set default marker position for <ul> and <ol> */
-ol,
-ul {
-  list-style-position: outside;
-}
-/* Remove default list markers from <ul> */
-ul {
-  list-style: none;
-}
-/* Set decimal list style type for <ol> */
-ol {
-  list-style-type: decimal;
-}
-/* [TABLES] */
-/* Remove spacing between <table> cells */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* Set default alignment (top, left) for <td> and <th> */
-/* Remove user agent 1px padding in <td> and <th> in IE 8 and firefox */
-th,
-td {
-  vertical-align: top;
-  text-align: left;
-  padding: 0;
-}
-/* [EMBEDS] */
-/* Remove border from <img> in IE 8/9 */
-img {
-  border: 0;
-}
-/* Correct overflow displayed oddly in IE 9 */
-svg:not(:root) {
-  overflow: hidden;
-}
-/* Remove margin from <figure> in Firefox and Chrome */
-figure {
-  margin: 0;
-}
-/* [FORMS] */
-/* Correct font family not being inherited in all browsers */
-/* Correct font size not being inherited in all browsers */
-/* Address margins set differently in Firefox 4+, Safari 5, and Chrome */
-/* Remove default background */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-  background: none;
-  vertical-align: baseline;
-}
-/* Address Firefox 4+ setting `line-height` on <input> using `!important` in the UA stylesheet */
-button,
-input {
-  line-height: normal;
-}
-/* Correct <button> `text-transform` inheritance in Chrome, Safari 5+, and IE 8+ */
-/* Correct <select> `text-transform` inheritance in Firefox 4+ and Opera */
-button,
-select {
-  text-transform: none;
-}
-/* Correct inability to style clickable 'input' types in iOS */
-/* Set hand-style cursor on clickable elements. */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-/* Remove hand-style cursor on disabled elements. */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-/* Address box sizing set to `border-box` in IE 8/9/10 */
-/* Remove excess padding in IE 8/9/10 */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-/* Address `appearance` set to `searchfield` in Safari 5 and Chrome */
-/* Address `box-sizing` set to `content-box` in Safari 5 and Chrome */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-/* Remove inner padding and search cancel button in Safari 5 and Chrome */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-/* Remove <button> and <input> inner padding and border in Firefox 4+ */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-/* Remove default vertical scrollbar in IE7/8/9 */
-/* Improve readability and alignment in all browsers */
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-/* Remove default margins and paddings from <ul> and <ol> */
-ol,
-ul {
-  position: relative;
-  padding: 0;
-  margin: 0;
-}
-/* Remove default margins and paddings from headers and paragraphs */
-/* Set default font size and weight */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font: 400 12px inherit;
-  margin: 0;
-}
-/* Remove default margins from <pre>, <code>, etc */
-code,
-kbd,
-pre,
-samp {
-  margin: 0;
-}
-/* Remove default border, margins and paddings from <fieldset> and <legend> */
-fieldset,
-legend {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-/* [IE7] */
-/* Display <audio>, <video>, <canvas> elements as inlines in IE 7 */
-.ie7 audio,
-.ie7 canvas,
-.ie7 video {
-  display: inline;
-  zoom: 1;
-}
-/* Correct list images handled incorrectly in IE 7 */
-.ie7 ul {
-  list-style-image: none;
-}
-/* Fix IE 7 list numbers bug (all items have number one) */
-.ie7 ol li {
-  display: list-item;
-}
-/* Set bicubic resizing for non-native sized <img> in IE 7 */
-.ie7 img {
-  -ms-interpolation-mode: bicubic;
-}
-/* Fix IE 7 button width bug 7 */
-.ie7 button,
-.ie7 input[type="button"],
-.ie7 input[type="reset"],
-.ie7 input[type="submit"] {
-  width: auto;
-  overflow: visible;
-}
-/* Improve readability of pre-formatted text in IE 7 */
-.ie7 pre {
-  word-wrap: break-word;
 }
 /* [BOOK PAGE] */
 .page {
@@ -395,27 +170,21 @@ legend {
   padding-top: 25px;
 }
 /* Print css 0.0.1 | 2013, Sergey Gogolev (gogoleff@gmail.com) | CC BY 3.0 */
-/* Based on normalize.css 2.1.3 and 1.1.3 | Nicolas Gallagher (git.io/normalize) | MIT */
+/* Inspired on normalize.css 2.1.3 and 1.1.3 | Nicolas Gallagher (git.io/normalize) | MIT */
 /* [PRINT] */
 @media print {
-  * {
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
   img {
-    page-break-inside: avoid;
     max-width: 100% !important;
   }
   a,
   a:visited {
     text-decoration: none;
-    border-bottom: 1px solid #000;
   }
   a[href]:after {
     content: " (" attr(href) ")";
     color: #666;
     word-wrap: break-word;
-    border-bottom: 1px solid #fff;
+    border-bottom: none;
   }
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
@@ -424,29 +193,5 @@ legend {
   abbr[title]:after {
     content: " (" attr(title) ")";
     color: #666;
-  }
-  tr,
-  img,
-  pre,
-  blockquote,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    page-break-inside: avoid;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    page-break-after: avoid;
-  }
-  p {
-    orphans: 3;
-    widows: 3;
   }
 }
