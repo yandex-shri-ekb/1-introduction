@@ -1,5 +1,5 @@
 /*
-Пользуясь случаем, хочу передать привет моей маме!
+Пользуясь случаем, хочу передать привет маме!
 */
 body {
       margin: 0;
@@ -11,10 +11,9 @@ body {
     height: 1210px;
     margin: auto;
     position: relative;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени.  Использую RGBA. Почему, спросите Вы? Все очень просто, rgba позволяет задать прозрачность для определенного элемента, а не всего объекта (ссылка на мат. часть http://cuprum.name/page/cvetovaya-model-rgba)*/
     padding: 10px;
     background: #FFF; /* Цвет фона используем трехсимвольное обозначение про которое рассказывал Паша */
-    font-family: Arial, Helvetica, sans-serif;
   }
   .east_side, .west_side, .center {
     position: absolute;
@@ -38,26 +37,24 @@ body {
    }
 
    h1 {
-
-    font-size: 28pt;
+    font: 28pt Arial, Helvetica, sans-serif;
     float: right;
      }
    h2 {
-     font-family: Tahoma, Geneva, sans-serif;
-     font-size: 16pt;
+     font: bold 16pt Tahoma, Geneva, sans-serif; /*Спасибо, Сергею за наводку в компановке фонта - кстати может кому пригодится шпора порядок вызова  font: [font-style||font-variant||font-weight] font-size [/line-height] font-family | inherit */
      float: left;
    }
    hr {
     clear: both; /* Нужно чтобы закрыть флоат тегов <h1> & <h2>, иначе текст будет оптикаемым*/
-    border: none; /* Убираем границу */
     background-color: #808080; /* Цвет линии */
-    color: silver; /* Цвет линии для IE6-7 */
+    color: #808080; /* Цвет линии для IE6-7 */
     height: 2px;
+    border: none; /* Убираем границу */
     opacity: 0.3; /*в исходном документе серый был настолько бледен, что мне пршлось использовать прозрачность*/
      }
-    hr.yellow{
+    hr.gradi_niz{
       background-color: #CC0;
-      color: #CC0;
+      color: #CC0; /* IE 7 */
     }
 
     .gradi {
@@ -69,14 +66,11 @@ body {
       background: -ms-linear-gradient(top,  #fefcea 0%,#CC0 100%); /* IE10+ */
       background: linear-gradient(to bottom,  #fefcea 0%,#CC0 100%); /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#CC0',GradientType=0 ); /* IE6-9 */
-      padding: 6px;
+      padding: 6px; /*Может вы это не прочитаете, но в валидаторе w3valid на градиент пришлось 4 ошибки(attempt to find a semi-colon before the property name. add it) (Property progid doesn't exist : DXImageTransform) - сочту это то, что градиент оффициально еще не вышел*/
      }
-     /*Может вы это не прочитаете, но в валидаторе w3valid на градиент пришлось 4 ошибки(attempt to find a semi-colon before the property name. add it) (Property progid doesn't exist : DXImageTransform) - сочту это то, что градиент оффициально еще не вышел*/
 
    code {
-      font-family: "Courier New", Courier, monospace;
-      font-size: 14pt;
-      font-weight:bold;
+      font: bold 14pt "Courier New", Courier, monospace;
     }
     .green {
       color: #4f7942; /*Путем поиска цвета Яндекс определил, что цвет "зеленого папоротника", так что яндекс не только, чтобы пинговать*/
@@ -92,3 +86,4 @@ body {
        font-family: Verdana, Geneva, sans-serif;
        font-size: 14pt;
      }
+/*Этого никто не прочитает, так что с ДР меня */
