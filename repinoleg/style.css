@@ -66,9 +66,6 @@ body {
 			background:     -ms-linear-gradient(to bottom, #fff2c4, #fd6);
 			background:      -o-linear-gradient(to bottom, #fff2c4, #fd6);
 			background:         linear-gradient(to bottom, #fff2c4, #fd6);
-			
-			margin-top: 0;
-			
 		}
 		.listing p {
 			font: 700 14px/15px Courier, "Courier New", monospace;
