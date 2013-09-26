@@ -1,0 +1,107 @@
+/* base */
+html {
+    font: 16px/1.4 Helvetica,sans-serif;
+}
+
+body {
+    background-color: #565656;
+    color: #000;
+}
+
+.l-wrapper {
+    margin: 1rem 3rem 0;
+}
+
+.b-page {
+    padding: 5.5rem 7.5rem 3rem;
+    background-color: #fff;
+    min-height: 94rem;
+    position: relative;
+}
+
+.b-page + .b-page {
+    margin: 1rem 0 0 0;
+}
+
+.b-page-number {
+    font-size: 1.4rem;
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+}
+
+/* content */
+h1, h2 {
+    border-bottom: 0.5rem solid #ebebeb;
+    padding: 0 0 0 1rem;
+    color: #444;
+}
+
+h1 {
+    margin: 0.5rem 0 9rem;
+    padding: 0 0 1.2rem;
+    text-align: right;
+    font: 3.4rem/1 "ArialNarrow", Arial, sans-serif;
+}
+
+h2 {
+    margin: 6.3rem 0 0;
+    padding: 0 0 1rem;
+    font: 700 1.7rem/1 "TahomaBold",Tahoma,sans-serif;
+    border-width: 0.3rem;
+}
+
+h2 + p {
+    margin-top: 1.8rem;
+}
+
+a {
+  color: #00FF00;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin: 2.6rem 0;
+}
+
+code {
+    font-family: "Courier", monospace;
+    color: #c25f06;
+}
+
+pre {
+    white-space: pre-line;
+    font: 700 1.2rem/1.4rem "Courier", monospace;
+    color: #34581e;
+    margin: 1rem 0.3rem;
+}
+
+pre > hr {
+    background-color: #ffe398;
+    height: 0.3rem;
+    margin: 1rem 0 0;
+    border: none;
+}
+
+pre > hr:first-child {
+    height: 2.6rem;
+    margin: 0 0 0.5rem;
+
+    background: -moz-linear-gradient(top, #fff1c1 0%, #ffdd64 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff1c1), color-stop(100%,#ffdd64));
+    background: -webkit-linear-gradient(top, #fff1c1 0%,#ffdd64 100%);
+    background: -o-linear-gradient(top, #fff1c1 0%,#ffdd64 100%);
+    background: -ms-linear-gradient(top, #fff1c1 0%,#ffdd64 100%);
+    background: linear-gradient(to bottom, #fff1c1 0%,#ffdd64 100%);
+}
+
+pre > code {
+    color: #b45f06;
+}
+
+.b-pre-comment {
+    color: #7a7a7a;
+}
