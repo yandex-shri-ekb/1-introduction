@@ -1,0 +1,131 @@
+body {
+    background-color: #37454f;
+}
+
+.content {
+    width: 70%;
+    margin: 15px auto;
+    padding: 0 10% 45px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px -6px 25px #000;
+    -moz-box-shadow: 0px -6px 25px #000;
+    box-shadow: 0px -6px 25px #000;
+}
+
+.grad {
+    background: -moz-linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
+    background: -webkit-linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
+    background: -o-linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
+    background: -ms-linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
+    background: linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
+    width: 100%;
+    height: 30px;
+    margin: 0 0 20px;
+}
+
+h1 {
+    border-bottom: 4px #ebebeb solid;
+    margin: 0 0 15%;
+    padding: 65px 0 15px;
+    text-align: right;
+    font: normal 45px Arial Narrow, Helvetica, sans-serif;
+    color: #444;
+    height: 100%;
+}
+
+h2 {
+    border-bottom: 2px #ebebeb solid; 
+    padding: 15px 0 10px;
+    font: bold 22.5px Helvetica, sans-serif;
+    color: #444;
+    letter-spacing: -1px;
+}
+
+p {
+    padding: 0 0 20px;
+    font: normal 18px/32px Helvetica, sans-serif;
+}
+
+.code {
+    padding: 0 0 15px;
+    border-bottom: 4px #ffd966 solid;
+    font: bold 15px/22px Courier, sans-serif;
+    color: #34581e;
+}
+
+a {
+    text-decoration: underline;
+    color: #1f1eaa;
+}
+
+i, .comment {
+    color: #7a7a7a;
+}
+
+b {
+    font-family: Courier, sans-serif;
+    color: #b45f06;
+}
+
+.empty {
+    width: 100%;
+    height: 1px;
+}
+
+
+@media print {
+    body {
+        background-color: #fff;
+    }
+
+    .content {
+        width: 85%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .grad {
+        display: none;
+    }
+
+    a {
+        font-size: 14px;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:after {
+        content:" (" attr(href) ")";
+    }
+
+    h1, h2 {
+        color: #000;
+        border: none;
+        text-align: left;
+    }
+
+    p {
+        font-size: 14px;
+        padding-bottom: 10px;
+        line-height: 22px;
+    }
+
+    .code {
+        border: none;
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        padding: 5px 0 0;
+        page-break-before: auto;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
