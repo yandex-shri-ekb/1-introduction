@@ -20,12 +20,12 @@ body {
     background: linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
     width: 100%;
     height: 30px;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 }
 
 h1 {
     border-bottom: 4px #ebebeb solid;
-    margin-bottom: 15%;
+    margin: 0 0 15%;
     padding: 65px 0 15px;
     text-align: right;
     font: normal 45px Arial Narrow, Helvetica, sans-serif;
@@ -42,12 +42,12 @@ h2 {
 }
 
 p {
-    padding-bottom: 20px;
+    padding: 0 0 20px;
     font: normal 18px/32px Helvetica, sans-serif;
 }
 
 .code {
-    padding-bottom: 15px;
+    padding: 0 0 15px;
     border-bottom: 4px #ffd966 solid;
     font: bold 15px/22px Courier, sans-serif;
     color: #34581e;
@@ -80,7 +80,7 @@ b {
 
     .content {
         width: 85%;
-        margin: none;
+        margin: 0;
         padding: 0;
         border: none;
     }
