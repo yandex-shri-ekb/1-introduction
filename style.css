@@ -1,10 +1,4 @@
-html,
 body {
-	padding: 0px;
-	margin: 0px;
-}
-
-.wrap {
 	width: 772px;
 	padding: 53px 81px 30px;
 	margin: 0px auto 15px;
@@ -84,12 +78,12 @@ code.inline-code {
 /* PRINT RULES */
 
 @page {
-	margin: 0.4in 0.5in 0.4in 0.5in;
+	margin: 0.4in 0.5in;
 }
 
 @media print {
 
-	.wrap {
+	body {
 		padding: 53px 0px 30px;
 		width: 100%;
 	}
