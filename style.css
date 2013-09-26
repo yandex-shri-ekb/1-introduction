@@ -1,104 +1,72 @@
 body {
-    background-color: #37454F;
+    background-color: #37454f;
 }
 
 .content {
-    min-width: 550px;
-    margin: 15px 75px;
-    padding: 0 94px 45px;
-    background-color: white;
-    -webkit-box-shadow: 0px -6px 25px black;
-    -moz-box-shadow:    0px -6px 25px black;
-    box-shadow:         0px -6px 25px black;
+    width: 70%;
+    margin: 15px auto;
+    padding: 0 10% 45px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px -6px 25px #000;
+    -moz-box-shadow: 0px -6px 25px #000;
+    box-shadow: 0px -6px 25px #000;
 }
 
-/* Градиент */
-
 .grad {
-    background: -moz-linear-gradient(bottom, #FFDD68 0%, #FFF1C0 100%);
-    background: -webkit-linear-gradient(bottom, #FFDD68 0%, #FFF1C0 100%);
-    background: -o-linear-gradient(bottom, #FFDD68 0%, #FFF1C0 100%);
-    background: -ms-linear-gradient(bottom, #FFDD68 0%, #FFF1C0 100%);
-    background: linear-gradient(bottom, #FFDD68 0%, #FFF1C0 100%);
-
+    background: -moz-linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
+    background: -webkit-linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
+    background: -o-linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
+    background: -ms-linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
+    background: linear-gradient(bottom, #ffdd68 0%, #fff1c0 100%);
     width: 100%;
     height: 30px;
-
     margin-bottom: 20px;
 }
 
-/* Заголовки */
-
-.bigHeader {
-    border-bottom: 4px #EBEBEB solid;
-    margin-bottom: 120px;
-
-    text-align: right;
+h1 {
+    border-bottom: 4px #ebebeb solid;
+    margin-bottom: 15%;
     padding-top: 65px;
     padding-bottom: 15px;
-
-    font-size: 50px;
-    font-weight: normal;
-    font-family: 'Arial Narrow', 'Helvetica', sans-serif;
-    color: #444444;
-
+    text-align: right;
+    font: normal 45px Arial Narrow, Helvetica, sans-serif;
+    color: #444;
     height: 100%;
 }
 
-.header {
-    border-bottom: 2px #EBEBEB solid; 
-    padding-top: 20px;
+h2 {
+    border-bottom: 2px #ebebeb solid; 
+    padding-top: 15px;
     padding-bottom: 10px;
-
-    font-size: 25px;
-    font-family: 'Helvetica', sans-serif;
-    font-weight: bold;
-    color: #444444;
+    font: bold 22.5px Helvetica, sans-serif;
+    color: #444;
     letter-spacing: -1px;
 }
 
-/* Разбиентие текста */
-
-.text {
-    margin-bottom: 45px;
-
-    font-size: 20px;
-    letter-spacing: -0.5px;
-    font-family: 'Helvetica', sans-serif;
-    line-height: 32px;
-}
-
-.paragraph {
-    padding-top: 30px;
+p {
+    padding-bottom: 20px;
+    font: normal 18px/32px Helvetica, sans-serif;
 }
 
 .code {
     padding-bottom: 15px;
-    border-bottom: 4px #FFD966 solid; 
-
-    font-family: 'Courier', sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    color: #34581E;
-    letter-spacing: 0.5px;
-    line-height: 22px;
+    border-bottom: 4px #ffd966 solid;
+    font: bold 15px/22px Courier, sans-serif;
+    color: #34581e;
 }
-
-/*Выделение текста*/
 
 a {
     text-decoration: underline;
-    color: #1F1EAA;
+    color: #1f1eaa;
 }
 
-.comment {
-    color: #7A7A7A;
+i, .comment {
+    color: #7a7a7a;
 }
 
-.mark {
-    font-family: 'Courier', sans-serif;
-    font-weight: bold;
-    color: #B45F06;
+b {
+    font-family: Courier, sans-serif;
+    color: #b45f06;
 }
 
 .empty {
@@ -109,10 +77,11 @@ a {
 
 @media print {
     body {
-        background-color: white;
+        background-color: #fff;
     }
 
     .content {
+        width: 85%;
         margin: none;
         padding: 0;
         border: none;
@@ -123,7 +92,8 @@ a {
     }
 
     a {
-        color: black;
+        font-size: 14px;
+        color: #000;
         text-decoration: none;
         font-weight: bold;
     }
@@ -132,22 +102,16 @@ a {
         content:" (" attr(href) ")";
     }
 
-    .bigHeader, .header {
-        color: black;
+    h1, h2 {
+        color: #000;
         border: none;
         text-align: left;
     }
 
-    .text {
-        margin-bottom: 14px;
-
+    p {
         font-size: 14px;
-        letter-spacing: 0px;
+        padding-bottom: 10px;
         line-height: 22px;
-    }
-
-    .paragraph {
-        padding-top: 10px;
     }
 
     .code {
@@ -156,10 +120,15 @@ a {
         padding: 15px 0;
     }
 
-    .bigHeader {
+    h1 {
+        font-size: 30px;
         padding-bottom: 0;
         margin-bottom: 10px;
         padding-top: 5px;
         page-break-before: auto;
+    }
+
+    h2 {
+        font-size: 18px;
     }
 }
