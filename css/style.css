@@ -1,13 +1,10 @@
-html, body, div, span, h1, h2, p, pre, a, code, em, img, strong, b, i {
+html, body, div, span, h1, h2, p, pre, a, code, em, strong, b, i {
     margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
 body {
-    background-color: #565656;
+    background: #565656;
     padding: 4px;
     font: normal 16px Arial, Helvetica, sans-serif;
     text-align: left;
@@ -29,7 +26,7 @@ h2 {
     margin: 65px 0 20px;
     border-bottom: 2px solid #ebebeb;
     page-break-after: avoid;
-    padding-bottom: 11px;
+    padding: 0 0 11px;
 }
 p {
     line-height: 28px;
@@ -83,7 +80,7 @@ a:hover {
 }
 .content {
     margin: 0 auto;
-    background-color: #fff;
+    background: #fff;
     max-width: 770px;
     padding: 55px 82px;
 }
@@ -94,7 +91,7 @@ a:hover {
 }
 @media print {
     body {
-        background-color: #fff;
+        background: #fff;
         margin: 0;
         font-size: 14px;
     }
