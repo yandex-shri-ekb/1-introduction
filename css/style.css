@@ -14,7 +14,7 @@ body {
     color: #000;
 }
 h1 {
-    font: normal 43px Arial, Helvetica, sans-serif;
+    font: normal 43px "Arial Narrow", Arial, Helvetica, sans-serif;
     text-align: right;
     color: #444;
     border-bottom: 4px solid #ebebeb;
