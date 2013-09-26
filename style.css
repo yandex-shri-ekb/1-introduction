@@ -1,0 +1,100 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+h1, h2 {
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 2px solid #ebebeb;
+	color: #444;
+}
+h1 {
+	text-align: right;
+	padding-bottom: 10px;
+	margin: 42px 0px 110px 0px;
+	font: 100 33pt 'Arial Narrow', Helvetica, sans-serif;
+	border-width: 4px
+}
+h2 {
+	text-align: left;
+	padding-bottom: 8px;
+	border-width: 1px;
+	margin: 58px 0px 20px 0px;
+	bottom: bold Helvetica, Arial, sans-serif;
+}
+p {
+	font: 300 13pt/26px Helvetica, Arial, sans-serif;
+	margin: 23px 0px 0px 0px;
+	word-spacing: 1px;
+}
+.page {
+	padding: 0px 81px;
+	position: relative;
+}
+pre {
+	font: 600 10pt 'Courier New', Courier, monospace;
+}
+.code-predecessor {
+	height: 25px;
+	margin: 30px 0px 10px 0px;
+
+	background: #fff2c4;
+	background:    -moz-linear-gradient(top, #fff2c4 0%, #ffdd66 100%);
+	background:        -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff2c4), color-stop(100%,#ffdd66));
+	background: -webkit-linear-gradient(top, #fff2c4 0%,#ffdd66 100%);
+	background:      -o-linear-gradient(top, #fff2c4 0%,#ffdd66 100%);
+	background:     -ms-linear-gradient(top, #fff2c4 0%,#ffdd66 100%);
+	background:         linear-gradient(to bottom, #fff2c4 0%,#ffdd66 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff2c4', endColorstr='#ffdd66',GradientType=0);
+}
+.code-successor {
+	border: 3px solid #ffd966;
+}
+.code-support {
+	color: #34581e;
+}
+.code-comment {
+	color: #7a7a7a;
+}
+.code-highlight {
+	color: #b45f06;
+}
+.code-reference {
+	font-style: oblique;
+	color: #606060;
+}
+.code-inline {
+	color: #b45f06;
+	font: bold 11pt 'Courier New', Courier, monospace;
+}
+a {
+	color: #021eaa;
+}
+.page-number {
+	display: none;
+	text-align: center;
+	font: 13pt Helvetica, Arial, sans-serif;
+	margin: 17px 0px 0px 0px;
+}
+
+@media print {
+	.code-predecessor, .code-successor {
+		-webkit-print-color-adjust: exact;
+	}
+	.page {
+		width: 771px;
+		height: 33cm;
+	}
+	h1 {
+		margin: 80px 0px 150px 0px;
+	}
+	.page-number {
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		width: 771px;
+	}
+	.page-break {
+		page-break-after: always;
+	}
+}
