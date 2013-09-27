@@ -1,89 +1,114 @@
-body {
-	font-size:100%;
-	font-family: Arial, Geneva, sans-serif;
-	font-weight:normal;
-	background: #fff;
-	color: #000;
-}
-.page-layout {
-	margin: auto;
-	padding: 0;
-	max-width:62.5em;
-}
-.pages-layout__main {
-	padding: 1em 2em 0.5em 2em;
-}
-.pages-layout_header__H1 {
-	font: 3.2em/1.7 "Arial Narrow", Arial, sans-serif;
-	color: #444;
-	text-align: right;
-	margin:0;
-}
-.pages-layout__hr {
-	height:0.01em;
-	margin:1em 0 0 0 ;
-	opacity: 0.3;
-	background: #808080;
-}
-.pages-layout_hr__H1 {
-	height:0.3em;
-	background: #808080;
-	opacity: 0.15;
-	margin: 0 0 9em 0;
+body
+{
+    font:normal 100% Arial, Geneva, sans-serif;
+    background: #fff;
+    color: #000;
 }
 
-.pages-layout__text {
-	font:1.3em/1.8em "Arial Narrow", Arial, sans-serif;
-	margin: 2em 0 0 0;
+.page-layout
+{
+    margin: auto;
+    padding: 0;
+    max-width:62.5em;
 }
-.pages-layout_header__H2 {
-	font: 1em/1.8;
-	margin: 3.5em 0 0 0;
-	color:#444;
-	font-weight: bold;
+
+.pages-layout__main
+{
+    padding: 1em 2em 0.5em;
 }
-.pages-layout__hr__colorBlock {
-	margin:2em 0 2em 0;
-	height: 1.875em;
-    opacity: 1;
-	border: none;
-	background: #fff2c4;
-	background: -moz-linear-gradient(top,  #fff2c4 0%, #ffdd66 100%); 
-  	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff2c4), color-stop(100%,#ffdd66)); 
-  	background: -webkit-linear-gradient(top,  #fff2c4 0%,#ffdd66 100%); 
-  	background: -o-linear-gradient(top,  #fff2c4 0%,#ffdd66 100%); 
-  	background: -ms-linear-gradient(top,  #fff2c4 0%,#ffdd66 100%); 
-  	background: linear-gradient(to bottom,  #fff2c4 0%,#ffdd66 100%); 
-  	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff2c4', endColorstr='#ffdd66',GradientType=0 ); 
-}
-.pages-layout_code {
- 	font-size: 1.3em;
-    font-weight: bold;
-    color: #34581E;
-    margin:0.3em 0 0 0;
-}
-.pages-layout_pagesNumber{
-	display: none;
-}
-.pages-layout_code__comment {
-	font-size: 1.3em;
-	font-weight: bold;
+
+.pages-layout_header__H1
+{
+    font: 3.2em/1.7 "Arial Narrow", Arial, sans-serif;
     color: #444;
-    margin:0.3em 0 0 0;
+    text-align: right;
+    margin:0;
 }
-.pages-layout_code__partCode {
-	font-weight: bold;
-	color: #B45F06;
+
+.pages-layout__hr
+{
+    height:0.01em;
+    margin:1em 0 0;
+    opacity: 0.3;
+    background: #808080;
 }
-.pages-layout_code__endCode {
-	margin: 1.5em 0 1em 0;
+
+.pages-layout_hr__H1
+{
+    height:0.3em;
+    background: #808080;
+    opacity: 0.15;
+    margin: 0 0 9em;
 }
-.pages-layout__hr_color {
-	height: 0.3em;
+
+.pages-layout__text
+{
+    font:1.3em/1.8em "Arial Narrow", Arial, sans-serif;
+    margin: 2em 0 0;
+}
+
+.pages-layout_header__H2
+{
+    font:bold 1em/1.8;
+    margin: 3.5em 0 0 0;
+    color:#444;
+ }
+
+.pages-layout__hr__colorBlock
+{
+    margin:2em 0;
+    height: 1.875em;
     opacity: 1;
-	border: none;
-	background: #ffdd66;
+    border: none;
+    background: #fff2c4;
+    background: -moz-linear-gradient(top,  #fff2c4 0%, #ffdd66 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff2c4), color-stop(100%,#ffdd66)); 
+    background: -webkit-linear-gradient(top,  #fff2c4 0%,#ffdd66 100%);
+    background: -o-linear-gradient(top,  #fff2c4 0%,#ffdd66 100%); 
+    background: -ms-linear-gradient(top,  #fff2c4 0%,#ffdd66 100%); 
+    background: linear-gradient(to bottom,  #fff2c4 0%,#ffdd66 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff2c4', endColorstr='#ffdd66',GradientType=0 ); 
 }
-.pages-layout__text__coloringSemantic {
-	color: #B45F06;
+
+.pages-layout_code
+{
+    font-size:bold 1.3em;
+    color: #34581E;
+    margin:0.3em 0 0;
+}
+
+.pages-layout_pagesNumber
+{
+    display: none;
+}
+
+.pages-layout_code__comment
+{
+    font-size:bold 1.3em;
+    color: #444;
+    margin:0.3em 0 0;
+}
+
+.pages-layout_code__partCode
+{
+    font-weight: bold;
+    color: #B45F06;
+}
+
+.pages-layout_code__endCode
+{
+    margin: 1.5em 0 1em;
+}
+
+.pages-layout__hr_color
+{
+    height: 0.3em;
+    opacity: 1;
+    border: none;
+    background: #fd6;
+}
+
+.pages-layout__text__coloringSemantic
+{
+    color: #B45F06;
 }
