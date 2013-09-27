@@ -1,84 +1,100 @@
-@page {
+@page
+{
   size: 210mm 297mm;
-  margin: 27mm 16mm 27mm 16mm;
+  margin: 27mm 16mm;
 }
 
-body {
-  font-family: "Arial", "Times New Roman", serif;
-  font-size: 14pt;
-  background: none;
-  color: #000;
+body
+{
+    font-family: "Arial", "Times New Roman", serif;
+    font-size: 14pt;
+    background: none;
+    color: #000;
 }
 
-p {
-  text-align: justify;
+p
+{
+   text-align: justify;
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
+a
+{
+    text-decoration: none;
+    color: #000;
 }
-a:after {
+
+a:after
+{
 	content:" <" attr(href) ">";
 }
-.pages-layout_pagesNumber {
-   display: block;
-   margin: 0 auto;
-   text-align: center;
-   page-break-after: always;
+
+.pages-layout_pagesNumber
+{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    page-break-after: always;
 }
 
-.pages-layout_header__H1 {
-	font: 20pt "Arial Narrow", Arial, sans-serif;
-	color: #444;
-	text-align: right;
-	margin:0;
-	line-height: 27pt;
-}
-.pages-layout__hr {
-	height:1pt;
-	margin:16pt 0 0 0 ;
-	opacity: 0.3;
-	background: #808080;
-}
-.pages-layout_hr__H1 {
-	height: 0.5pt;
-	opacity: 0.15;
-	margin: 0 0 20pt 0;
+.pages-layout_header__H1
+{
+    font: 20pt/27pt "Arial Narrow", Arial, sans-serif;
+    color: #444;
+    text-align: right;
+    margin:0;
 }
 
-.pages-layout__text {
-	font:20pt "Arial Narrow", Arial, sans-serif;
-	margin: 32pt 0 0 0;
-	line-height: 30pt;
+.pages-layout__hr
+{
+    height:1pt;
+    margin:16pt 0 0;
+    opacity: 0.3;
+    background: #808080;
 }
-.pages-layout_header__H2 {
-	font: 16pt;
-	margin: 56pt 0 0 0;
+
+.pages-layout_hr__H1
+{
+    height: 0.5pt;
+    opacity: 0.15;
+    margin: 0 0 20pt;
+}
+
+.pages-layout__text
+{
+    font:20pt/30pt "Arial Narrow", Arial, sans-serif;
+    margin: 32pt 0 0;
+}
+
+.pages-layout_header__H2
+{
+	font: bold 16pt/30pt;
+	margin: 56pt 0 0;
 	color:grey;
-	font-weight: bold;
-	line-height: 30pt;
-}
-.pages-layout__hr__colorBlock {
-	margin:32pt 0 32pt 0;
-	height: 30pt;
-    opacity: 1;
-	border: none;
-	background: #000;
-	
-}
-.pages-layout_code {
- 	font-size: 16pt;
-    font-weight: bold;
-    color: #34581E;
-    margin:5pt 0 0 0;
 }
 
-.pages-layout_code__comment {
-	font-size: 16pt;
-	font-weight: bold;
-     margin:8pt 0 0 0;
+.pages-layout__hr__colorBlock
+{
+    margin:32pt 0;
+    height: 30pt;
+    opacity: 1;
+    border: none;
+    background: #000;
 }
-.pages-layout_code__partCode {
-	font-weight: bold;
+
+.pages-layout_code
+{
+ 	font-size: bold 16pt;
+    color: #34581E;
+    margin:5pt 0 0;
+}
+
+.pages-layout_code__comment
+{
+    font-size: bold 16pt;
+    margin:8pt 0 0;
+}
+
+.pages-layout_code__partCode
+{
+    font-weight: bold;
 }
