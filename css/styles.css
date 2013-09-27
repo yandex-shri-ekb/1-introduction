@@ -1,16 +1,19 @@
-html, body {
+html,
+body
+{
     margin: 0;
     padding: 0;
     color: #000;
 }
 
-body {
+body
+{
     background-color: #ddd;
 }
 
-
 /* Блок страницы */
-.page {
+.page
+{
     position: relative;
     margin: 10px 15%;
     padding: 57px 76px;
@@ -18,7 +21,8 @@ body {
     background-color: #fff;
 }
 
-.page__number {
+.page__number
+{
     position: absolute;
     bottom: 1.25em;
     left: 0;
@@ -27,56 +31,66 @@ body {
 }
 
 /* Блок типографики */
-.typo {
+.typo
+{
     font: 14px/1.7 Arial, Helvetica, sans-serif;
 }
 
 .typo h1,
-.typo h2 {
+.typo h2
+{
     border-bottom: 1px solid #ebebeb;
-    padding-bottom: 13px;
+    padding: 0 0 13px;
 }
 
-.typo h1 {
-    margin: 25px 0 100px 0;
+.typo h1
+{
+    margin: 25px 0 100px;
     font: normal 37px/1 Arial, Helvetica, sans-serif;
     text-align: right;
     border-width: 2px;
 }
 
-.typo h2 {
-    margin: 60px 0 21px 0;
+.typo h2
+{
+    margin: 60px 0 21px;
     font: bold 16px/1 Tahoma, Geneva, sans-serif;
     color: #444;
 }
 
-.typo strong {
+.typo strong
+{
     font-weight: normal;
     color: #b45f06;
 }
 
-.typo em {
+.typo em
+{
     color: #606060;
 }
 
-.typo a {
+.typo a
+{
     color: #021eaa;
 }
 
 /* Блок программного кода */
-.code {
-    margin: 28px 0 26px 0;
-    padding: 42px 0 12px 0;
+.code
+{
+    margin: 28px 0 26px;
+    padding: 42px 0 12px;
     font: bold 11px/1.35 Arial, Helvetica, sans-serif;
     color: #34581e;
     border-bottom: 2px solid #ffd966;
     background: url("../img/code__line-gradient.png") top repeat-x;
 }
 
-.code__str {
+.code__str
+{
     color: #b45f06;
 }
 
-.code__comment {
+.code__comment
+{
     color: #7a7a7a;
 }
