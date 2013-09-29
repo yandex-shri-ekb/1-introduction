@@ -95,6 +95,6 @@ a
 .code-end
 {
    border-bottom: .08cm solid #f5d86e;
-   padding-bottom: .33cm;
+   padding: 0 0 .33cm;
    margin-bottom: .6cm
 }
