@@ -20,14 +20,8 @@ body
 img
 {
    width: 100%;
-   height: .55cm
-}
-
-.top-border
-{
-   border-style: solid;
-   border-width: 15px 0 0;
-   border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAPCAMAAAASwVXLAAAALVBMVEX/5Ij/5ZD/4Xr+77j/8sX/6Z3/5IH/7bH/3mr/6qb/7Kv/33L/6JX/8b7/7bNcG1SzAAAAIElEQVR42gXABQ0AMAwAsJ75/uUuqqcYtqW5ErrsmH4ABhEAalDdeJMAAAAASUVORK5CYII=') 15 0 0 fill repeat
+   height: .55cm;
+   padding-top: 1.5cm
 }
 
 .list
@@ -54,11 +48,7 @@ p
 
 h1, h2
 {
-   color: #444
-}
-
-h2
-{
+   color: #444;
    margin: 0
 }
 
@@ -76,8 +66,7 @@ h2
 {
    font: 700 13pt 'Tahoma';
    line-height: .35cm;
-   padding-top: 1.79cm;
-   padding-bottom: .37cm;
+   padding: 1.79cm 0 .37cm;
    border-bottom: .03cm #eaeaea solid
 }
 
