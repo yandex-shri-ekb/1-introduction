@@ -1,0 +1,111 @@
+body
+{
+   margin: 0;
+   padding: 0;
+   background: #929292
+}
+
+.page
+{
+   position: relative;
+   overflow: hidden;
+   margin: 10px auto;
+   background: #fff;
+   border: none;
+   width: 210mm;
+   height: 297mm;
+   box-shadow: 0 2px 6px #4b4b4b
+}
+
+img
+{
+   width: 100%;
+   height: .55cm
+}
+
+.top-border
+{
+   border-style: solid;
+   border-width: 15px 0 0;
+   border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAPCAMAAAASwVXLAAAALVBMVEX/5Ij/5ZD/4Xr+77j/8sX/6Z3/5IH/7bH/3mr/6qb/7Kv/33L/6JX/8b7/7bNcG1SzAAAAIElEQVR42gXABQ0AMAwAsJ75/uUuqqcYtqW5ErrsmH4ABhEAalDdeJMAAAAASUVORK5CYII=') 15 0 0 fill repeat
+}
+
+.list
+{
+   position: absolute;
+   bottom: .57cm;
+   width: 100%;
+   text-align: center;
+   line-height: .25cm
+}
+
+.content
+{
+   margin: 1.47cm auto;
+   width: 17.78cm
+}
+
+p
+{
+   font: 11pt 'Helvetica';
+   line-height: .67cm;
+   margin: .29cm 0 0
+}
+
+h1, h2
+{
+   color: #444
+}
+
+h2
+{
+   margin: 0
+}
+
+h1
+{
+   font: 28pt 'Arial Narrow';
+   text-align: right;
+   border-bottom: .07cm #eaeaea solid;
+   line-height: .71cm;
+   padding: 0 0 5mm;
+   margin: 0 0 2.51cm
+}
+
+h2
+{
+   font: 700 13pt 'Tahoma';
+   line-height: .35cm;
+   padding-top: 1.79cm;
+   padding-bottom: .37cm;
+   border-bottom: .03cm #eaeaea solid
+}
+
+.green, .code
+{
+   font: 700 9pt 'Courier';
+   color: #34581e
+}
+
+.grey
+{
+   color: #676767
+}
+
+.brown
+{
+   color: #b45f06;
+   font: 700 10pt 'Courier New'
+}
+
+a
+{
+   color: #0b2faa
+}
+
+.code-end
+{
+   border-bottom: .08cm solid #f5d86e;
+   padding-bottom: .33cm;
+   margin-bottom: .6cm
+}
