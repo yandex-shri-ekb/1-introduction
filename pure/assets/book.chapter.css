@@ -14,6 +14,7 @@
     padding: 0 0 8px;
     text-align: right;
     font: 400 37px/43px 'Arial Narrow', Arial, sans-serif;
+    font-stretch: condensed; /* Fix Arial Narrow in Firefox */
     color: #343434;
     border-bottom: #e5e5e5 solid 2px;
 }

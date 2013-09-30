@@ -1,9 +1,8 @@
 /* [BOOK CODE] */
 
 .book-code code,
-.book-code-comment,
 .book-code-relevant {
-    font: 700 13px 'Courier New';
+    font: 700 13px 'Courier New', Courier, 'Andale Mono', monospace;
 }
 
 .book-code {

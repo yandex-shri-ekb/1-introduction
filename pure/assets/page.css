@@ -1,18 +1,18 @@
-/* [BOOK PAGE] */
+/* [PAGE] */
 
 .page {
     background: #999;
     color: #000;
 }
 
-.book {
+.page-width {
     position: relative;
     max-width: 810px;
     margin: 0 auto;
     overflow: hidden;
 }
 
-/* [PRINT: book page] */
+/* [PRINT: page] */
 @media print {
 
     @page {
