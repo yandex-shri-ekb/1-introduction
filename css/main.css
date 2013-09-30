@@ -35,7 +35,6 @@ body {
 /* content */
 h1, h2 {
     border-bottom: 0.5rem solid #ebebeb;
-    padding: 0 0 0 1rem;
     color: #444;
 }
 
@@ -58,7 +57,7 @@ h2 + p {
 }
 
 a {
-  color: #00FF00;
+  color: #0F0;
 }
 
 p {
