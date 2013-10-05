@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* [PAGE] */
 
 .page {
@@ -12,7 +14,7 @@
     overflow: hidden;
 }
 
-/* [PRINT: page] */
+/* [PAGE: print] */
 @media print {
 
     @page {

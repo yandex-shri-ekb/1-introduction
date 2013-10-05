@@ -1,8 +1,15 @@
-/* [BOOK CODE] */
+/* BOOK CODE
+   ========================================================================== */
 
-.book-code code,
+.book-code-wrapper {
+    position: relative;
+    padding-top: 25px;
+}
+
+.book-code-comment,
+.book-code-accompanying,
 .book-code-relevant {
-    font: 700 13px 'Courier New', Courier, 'Andale Mono', monospace;
+    font: 700 13px "Courier New", Courier, "Andale Mono", monospace;
 }
 
 .book-code {
@@ -33,10 +40,5 @@
     background-image: -ms-linear-gradient(top, #fff1bb 0%, #ffd751 100%);
     background-image: -o-linear-gradient(top, #fff1bb 0%, #ffd751 100%);
     background-image: linear-gradient(top, #fff1bb 0%, #ffd751 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#fff1bb', endColorstr='#ffd751');
-}
-
-.book-code-wrapper {
-    position: relative;
-    padding-top: 25px;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#fff1bb", endColorstr="#ffd751");
 }

@@ -1,4 +1,5 @@
-/* [BOOK CHAPTER] */
+/* BOOK CHAPTER
+   ========================================================================== */
 
 .chapter {
     padding: 50px 70px 0;
@@ -13,7 +14,7 @@
     margin: 0 0 100px;
     padding: 0 0 8px;
     text-align: right;
-    font: 400 37px/43px 'Arial Narrow', Arial, sans-serif;
+    font: 400 37px/43px "Arial Narrow", Arial, sans-serif;
     font-stretch: condensed; /* Fix Arial Narrow in Firefox */
     color: #343434;
     border-bottom: #e5e5e5 solid 2px;
@@ -36,7 +37,9 @@
     color: #5d5d5d;
 }
 
-/* [PRINT: book chapter] */
+/* BOOK CHAPTER: print
+   ========================================================================== */
+
 @media print {
 
     .chapter {

@@ -1,4 +1,6 @@
-/* [PRINT: common] */
+/* PRINT
+   ========================================================================== */
+
 @media print {
 
     a,
@@ -13,7 +15,6 @@
         border-bottom: none;
     }
 
-    a[href^="javascript:"]:after,
     a[href^="#"]:after {
         content: "";
     }
