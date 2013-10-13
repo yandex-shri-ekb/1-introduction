@@ -10,6 +10,7 @@
 * Сверстать  версию для печати, которая при выводе на печать будет выглядеть аналогично оригиналу в PDF с разбивкой на страницы;
 * Поработать над улучшением типографики страницы.
 
-## Решение (html, css)
+## Решение
+(html, css)
 * [Исходный код](https://github.com/gogoleff/Yandex-IDS2013_1-introduction/tree/master/pure)
 * [Посмотреть страницу](http://gogoleff.github.io/Yandex-IDS2013_1-introduction/pure/)
