@@ -1,7 +1,8 @@
 /* PRINT
    ========================================================================== */
 
-@media print {
+@media print
+{
 
     a,
     a:visited {
@@ -12,6 +13,7 @@
         content: " (" attr(href) ")";
         color: #666;
         word-wrap: break-word;
+
         border-bottom: none;
     }
 

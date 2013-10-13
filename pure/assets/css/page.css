@@ -1,24 +1,29 @@
-@charset "UTF-8";
+/* PAGE
+   ========================================================================== */
 
-/* [PAGE] */
+.page
+{
+   color: #000;
 
-.page {
-    background: #999;
-    color: #000;
+   background: #999;
 }
 
-.page-width {
+.page-width
+{
     position: relative;
+
     max-width: 810px;
     margin: 0 auto;
+
     overflow: hidden;
 }
 
-/* [PAGE: print] */
-@media print {
+/* PAGE: print
+   ========================================================================== */
 
+@media print
+{
     @page {
         margin: 40px 70px;
     }
-
 }

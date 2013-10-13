@@ -5,34 +5,40 @@
    ========================================================================== */
 
 /* Prevent text size adjust after orientation change, without disabling user zoom in iOS and Windows Phone */
-html {
+html
+{
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
 
 /* Set default font  */
 /* Remove default margin */
-body {
-    font: 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+body
+{
     margin: 0;
+
+    font: 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /* LINKS
    ========================================================================== */
 
 /* Remove the gray background color from active links in IE 10 */
-a {
+a
+{
     background: transparent;
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers */
-a:focus {
+a:focus
+{
     outline: thin dotted;
 }
 
 /* Improve readability when focused and also mouse hovered in all browsers */
 a:active,
-a:hover {
+a:hover
+{
     outline: 0;
 }
 
@@ -42,7 +48,8 @@ a:hover {
 /* Set default font of pre-formatted text in all browsers */
 /* Set default white space behaviour */
 code,
-pre {
+pre
+{
     font: 400 12px monospace, serif;
     white-space: pre-wrap;
 }

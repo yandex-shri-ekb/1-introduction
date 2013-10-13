@@ -11,5 +11,5 @@
 * Поработать над улучшением типографики страницы.
 
 ## Решение
-* [Исходный код](https://github.com/gogoleff/1-introduction/tree/master/dev), [посмотреть страницу](http://gogoleff.github.io/1-introduction/dev/)
-* [Чистое решение (html and css only)](https://github.com/gogoleff/1-introduction/tree/master/pure), [посмотреть страницу](http://gogoleff.github.io/1-introduction/pure/)
+* [Исходный код](https://github.com/gogoleff/1-introduction/tree/master/pure)
+* [Посмотреть страницу](http://gogoleff.github.io/1-introduction/pure/)
