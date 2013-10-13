@@ -11,5 +11,5 @@
 * Поработать над улучшением типографики страницы.
 
 ## Решение
-* [Исходный код](https://github.com/gogoleff/1-introduction/tree/master/pure)
-* [Посмотреть страницу](http://gogoleff.github.io/1-introduction/pure/)
+* [Исходный код](https://github.com/gogoleff/Yandex-IDS2013_1-introduction/tree/master/pure)
+* [Посмотреть страницу](http://gogoleff.github.io/Yandex-IDS2013_1-introduction/pure/)
