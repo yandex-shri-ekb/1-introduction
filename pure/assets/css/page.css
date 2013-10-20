@@ -1,7 +1,6 @@
 .page
 {
    color: #000;
-
    background: #999;
 }
 
@@ -9,10 +8,10 @@
 {
     position: relative;
 
+    overflow: hidden;
+
     max-width: 810px;
     margin: 0 auto;
-
-    overflow: hidden;
 }
 
 /* [PRINT] */
