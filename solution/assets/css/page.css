@@ -1,0 +1,24 @@
+.page
+{
+   color: #000;
+   background: #999;
+}
+
+.page-width
+{
+    position: relative;
+
+    overflow: hidden;
+
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+/* [PRINT] */
+
+@media print
+{
+    @page {
+        margin: 40px 70px;
+    }
+}
